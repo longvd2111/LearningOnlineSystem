@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00.270 --> 00:04.770
+So VPN which stands for a virtual private network.
+
+00:04.770 --> 00:11.370
+There are several ways that a VPN can be established and most of us are actually having a VPN running
+
+00:11.670 --> 00:12.900
+whenever we are visiting.
+
+00:13.080 --> 00:18.660
+Banking side or grocery side for example like Amazon.
+
+00:18.660 --> 00:25.320
+When you are visiting Amazon you should see that it has 80 G.P.S. mean that your connection is secured
+
+00:25.530 --> 00:32.700
+because when you're buying something on Amazon and looking into Amazon you don't want anyone to see
+
+00:32.700 --> 00:35.840
+your log in credentials or your card information.
+
+00:35.910 --> 00:43.110
+So it's important that the data is encrypted and hidden such that it is only you and Amazon server which
+
+00:43.110 --> 00:45.710
+can read this information.
+
+00:45.750 --> 00:52.530
+So this is what is called VPN web and it uses Web protocols to establish this virtual private network
+
+00:53.160 --> 00:57.080
+and we have several protocols in place to do that.
+
+00:57.090 --> 00:59.490
+We have some older one and some newer ones.
+
+00:59.670 --> 01:03.170
+The oldest one is the SSL with it you could share the blame.
+
+01:03.660 --> 01:07.330
+And that is the Web based VPN hated UBS.
+
+01:07.820 --> 01:12.690
+As we see right here whereas this is unencrypted and does not use any of these encryption protocols
+
+01:13.350 --> 01:21.260
+SSL is based on certificates in order to make this mutual of indication of a client and a server will
+
+01:21.330 --> 01:26.760
+be discussing certificates in much more detailed in upcoming lectures.
+
+01:26.760 --> 01:33.510
+But it still is kind of old school now and it is replaced in most cases by what is called Telus and
+
+01:33.890 --> 01:38.170
+a more updated version of Telus like Telus one put two.
+
+01:38.340 --> 01:45.870
+So Telus is the transport layer security and that has more or less replaced SSL entirely and it is also
+
+01:45.870 --> 01:47.610
+based on certificates.
+
+01:47.850 --> 01:55.680
+But as the demand for security increases we need newer versions and we need to update the old versions
+
+01:55.680 --> 02:00.250
+in order to secure that our information is truly encrypted.
+
+02:00.420 --> 02:07.270
+So now we have moved more and more to Telus one point to which enhanced security that we used and all
+
+02:07.270 --> 02:13.770
+the protocols and we have for example now having has checks in place and has checking.
+
+02:13.770 --> 02:17.640
+It's something that we will also discuss in further leg just like certificates.
+
+02:17.730 --> 02:23.970
+So this was a short introduction to the Web protocols used in order to secure our information.
+
+02:23.970 --> 02:33.480
+But as you have seen in part 10 VPN is much more than just entering a website and having our information
+
+02:33.480 --> 02:41.910
+encrypted VPN is most commonly referred to as when you are having a virtual private network which is
+
+02:42.160 --> 02:45.480
+the short the name of the European.
+
+02:45.480 --> 02:50.340
+For example when you're sitting at a hotel on a public network or you're sitting at Starbucks on a public
+
+02:50.340 --> 02:56.760
+network then you want a way to secure your information so that you for example can connect to your company
+
+02:57.780 --> 03:01.400
+resources without having anyone read the information.
+
+03:01.440 --> 03:08.280
+So you want to be able to sit on your computer on a hotel with public Internet and then connect out
+
+03:08.280 --> 03:15.060
+to the Internet and to your company to fetch this resource and get it received without anyone in between
+
+03:15.330 --> 03:17.430
+this communication road.
+
+03:17.780 --> 03:22.030
+Having been able to read and download information.
+
+03:22.170 --> 03:32.670
+So what we use for the VPN is O2 teepee which is layer to tunneling protocol and that protocol is enable
+
+03:32.670 --> 03:35.520
+us to carry layer to traffic overlay a tree.
+
+03:35.820 --> 03:43.750
+So remember that layer to were a layer would make addresses Wesley a tree was the layer of IP addresses.
+
+03:43.770 --> 03:50.190
+If you haven't seen the first lectures or you simply forgot what the different layers were and the comparison
+
+03:50.190 --> 03:55.260
+between them then I recommend you to go words to first lectures of this course.
+
+03:55.260 --> 04:03.930
+But even though we have this L2 GP protocol it is not the only path that we need to establish this VPN
+
+04:03.930 --> 04:12.390
+connection from our class computer to our server because L2 GP does not have encryption by itself.
+
+04:12.480 --> 04:20.790
+It is basically just what is used for us to transport some information from one point to another.
+
+04:20.940 --> 04:26.450
+And then we need to use IP sic as our encryption measure and it indication Misha.
+
+04:26.490 --> 04:30.320
+So we are using L2 GP with IP sic on top of it.

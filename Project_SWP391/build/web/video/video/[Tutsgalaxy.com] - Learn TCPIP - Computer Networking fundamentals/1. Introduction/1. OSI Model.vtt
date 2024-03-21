@@ -1,0 +1,277 @@
+WEBVTT
+
+00:00.660 --> 00:03.000
+So what is networking.
+
+00:03.000 --> 00:09.990
+Well networking or network is two or more devices that is connected and can thereby communicate with
+
+00:09.990 --> 00:11.570
+each other.
+
+00:11.820 --> 00:17.280
+And that is really what we're going to focus on in this entire course that we have multiple devices
+
+00:17.280 --> 00:19.310
+that are able to talk to each other.
+
+00:19.380 --> 00:22.190
+So we are going to look at how such can happen.
+
+00:23.190 --> 00:30.300
+And when we say networking it might sound kinda simple because when we say oh we are just communicating
+
+00:30.420 --> 00:36.660
+over a network or we are just sending information but you can compare it to shipping when you're talking
+
+00:36.660 --> 00:37.220
+about shipping.
+
+00:37.220 --> 00:43.530
+That also sounds very simple but when you dive into the different aspect of shipping a parcel as we
+
+00:43.530 --> 00:49.320
+see in the picture right here there are so many different steps that someone has to take care of before
+
+00:49.860 --> 00:56.580
+the package gets from the shop where you bought it to your front door and it is the same with networking.
+
+00:56.580 --> 01:02.190
+Whenever we are doing something online there is a lot of steps that is happening behind the scene and
+
+01:02.190 --> 01:07.530
+that can be broken down through as same model which we are going to talk about in this lecture.
+
+01:08.520 --> 01:10.220
+So do as I model.
+
+01:10.500 --> 01:18.270
+This is the network model that is defining all the aspects that are happening when we are doing communication
+
+01:18.300 --> 01:18.950
+or one that work.
+
+01:18.960 --> 01:20.520
+And it consists of seven layers.
+
+01:20.640 --> 01:26.730
+So we have layer one the physical layer which is the lowest layer and the lowest level where we have
+
+01:26.730 --> 01:35.340
+the electric bikes and cables where we have Layer 7 which is the application meaning the application
+
+01:35.370 --> 01:38.690
+and front and that you're interacting with which is the highest level.
+
+01:38.790 --> 01:41.000
+And then we have these different layers in between.
+
+01:42.150 --> 01:48.420
+So before we get into the different layers it's more important that we understand how it is or same
+
+01:48.420 --> 01:50.190
+model actually works.
+
+01:50.190 --> 01:56.640
+So even though that we now know there are these several layers it's important to see how this is working
+
+01:56.640 --> 01:57.630
+in practice.
+
+01:57.630 --> 02:05.520
+So for example if you have computer a right here a computer be right here then a person on a is going
+
+02:05.520 --> 02:11.250
+to send something to computer b he is starting on the application layer and then he is working on the
+
+02:11.250 --> 02:17.220
+computer and the electronics bit within his computer is working its way down from application layer
+
+02:17.250 --> 02:22.950
+all the way down through the different layers until it resets it reach the physical layer and then it
+
+02:22.950 --> 02:27.990
+is going to be transferred over to computer B which is starting from the lowest layer and then working
+
+02:27.990 --> 02:34.030
+its way up until it is capable of sending the data that computer a send.
+
+02:34.050 --> 02:36.720
+So this is how to assign model works.
+
+02:36.720 --> 02:44.970
+It start from the top in to one and all the way down and it goes from the bottom up in the other end
+
+02:45.180 --> 02:45.940
+to them.
+
+02:45.960 --> 02:51.450
+So we have the first layer which is the physical layer and as I mentioned before this is the lowest
+
+02:51.450 --> 02:52.060
+level.
+
+02:52.080 --> 02:53.630
+So this is cable and byte.
+
+02:53.640 --> 02:54.990
+It is here we have the electric
+
+02:59.180 --> 03:05.320
+voltages happening and it is here we have our network interface cut and it is also here we have all
+
+03:05.330 --> 03:14.690
+cable so this is on the very basics where it is not cold anymore but the electric impulses that is getting
+
+03:14.690 --> 03:22.460
+transferred to the cable then we have to layer to which is the data link layer and this is where we
+
+03:22.460 --> 03:32.880
+Peg it our bytes into frames and it is also in this layer that we have our mac addresses on our computer
+
+03:32.910 --> 03:39.930
+which is a unique address that is hardcoded into your network card meaning that compared to an IP address
+
+03:40.260 --> 03:43.290
+is something that you can change whenever you want.
+
+03:43.290 --> 03:51.120
+You cannot change your mac address you can do mega spoofing but it is totally another thing.
+
+03:51.270 --> 03:53.240
+But again you can simply change this.
+
+03:53.250 --> 03:56.750
+So this is the layer to where we are using Mac addresses.
+
+03:56.760 --> 04:02.100
+If we're going to communicate then we have to lay a tree which is one step above.
+
+04:02.580 --> 04:08.820
+And this is where we get introduced to the IP addresses whereas we for before and layer two relied on
+
+04:08.820 --> 04:09.530
+mega addresses.
+
+04:09.540 --> 04:19.210
+We are now using IP addresses so an IP address is really a logical address and it is definitely hardcoded.
+
+04:19.220 --> 04:26.660
+So it is something that can be changed when we are in need of a new one and therefore it is not a unique
+
+04:26.690 --> 04:33.320
+address because either it can be changed on your local machine internally within the network or your
+
+04:33.530 --> 04:37.620
+Internet service provider can change it in their setup.
+
+04:37.700 --> 04:43.930
+So it is not something that is hard coded and it is also this layer that is doing the network routing.
+
+04:43.940 --> 04:50.780
+So whenever you are using a router for example that is a tree device because it is distributing packages
+
+04:50.780 --> 04:56.720
+based on the different eyepiece and it is sorting who is going to get what based on the IP addresses
+
+04:56.870 --> 04:57.610
+on the packages.
+
+04:57.620 --> 05:01.750
+That is going to be transferred then we have to leave for.
+
+05:01.770 --> 05:03.440
+Which is the transport layer.
+
+05:03.570 --> 05:12.690
+This is they manage and control layer where we are starting to see different ways of transferring information.
+
+05:12.690 --> 05:20.930
+For example we have the TTP and UDP which is two different protocols for the TTP we are in need of getting
+
+05:20.930 --> 05:24.530
+identified and verified that our data is reaching our target.
+
+05:24.830 --> 05:30.230
+So if you're using a TTP protocol whenever we are sending something out we need to get our response
+
+05:30.230 --> 05:37.340
+back saying I got this package set menu one but if we use UDP which is the one that is most likely being
+
+05:37.340 --> 05:47.610
+used on all streaming services and especially YouTube we are just trolling packages as to what our target.
+
+05:47.780 --> 05:52.940
+And we don't really care if they receive them in the right order we are just spamming them with data
+
+05:53.000 --> 05:59.840
+because if we needed an confirmation for each packages then the load time will be tremendous.
+
+05:59.840 --> 06:01.310
+And that is not really smart.
+
+06:01.370 --> 06:08.990
+So this is in the letter for that we are dealing with these two different protocols and it is also where
+
+06:09.020 --> 06:17.990
+we are splitting the communication that is coming from the layers above layer four down into these packages.
+
+06:18.500 --> 06:22.700
+Then we have the layer five which is the section position layer.
+
+06:22.700 --> 06:27.200
+This is the layer that is controlling our traffic meaning that it is the layer that is establishing
+
+06:27.290 --> 06:31.150
+and it is managing and it is terminating our connection.
+
+06:31.160 --> 06:39.950
+And it also coordinate this communication and take charge of how much we are allowed to send and when
+
+06:39.950 --> 06:41.320
+we are allowed to send it.
+
+06:41.330 --> 06:49.010
+So whenever you are going online it is the layer for that is taking charge of establishing the connection
+
+06:49.670 --> 06:52.650
+when you are getting connected to something online.
+
+06:52.670 --> 06:59.540
+And it is also delay of five that is in charge of turning this connection so that we don't have thousands
+
+06:59.600 --> 07:00.550
+of connections.
+
+07:00.550 --> 07:06.230
+If when we are done using them then we have to lay a six which is the presentation layer.
+
+07:06.380 --> 07:09.790
+This is the layer that is right below the application layer.
+
+07:09.800 --> 07:16.970
+So this is where our data is getting transformed into a format that our application can understand.
+
+07:16.970 --> 07:23.000
+So for example when we have some packages that God sent to us it is layer six that is transforming it
+
+07:23.060 --> 07:31.030
+into for example X a mill or doing encryption or decryption on it before it is presented in the application.
+
+07:31.070 --> 07:41.090
+So the last layer layer 7 application layer this is where our data is presented and this is where we
+
+07:41.090 --> 07:45.150
+are getting access form our application to the network.
+
+07:45.230 --> 07:52.310
+And this can happen over here GP if GP is A.P. based on what we are going to do if it mail simply were
+
+07:52.310 --> 07:53.780
+browsing or file transfer.
+
+07:54.620 --> 07:59.990
+So this was a quick overlook of the seven layers and it was a model in the next pictures.
+
+08:00.020 --> 08:08.180
+We will dig deeper into each of them along the way to understand this complex area of networking.

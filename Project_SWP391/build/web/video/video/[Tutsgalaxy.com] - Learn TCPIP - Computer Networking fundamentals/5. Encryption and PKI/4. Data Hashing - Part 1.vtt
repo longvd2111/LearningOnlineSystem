@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.150 --> 00:01.550
+So data.
+
+00:01.600 --> 00:09.060
+1 to 1 when we are hashing data we are using a one way month magical algorithm like we see in the picture
+
+00:09.060 --> 00:09.570
+right here.
+
+00:09.600 --> 00:13.030
+So we have some text or file it could be anything.
+
+00:13.080 --> 00:19.750
+Then we run it through our hashing algorithm and then we get some has text out of it.
+
+00:19.800 --> 00:27.540
+So the idea behind this has value is that it is unique based on the content of this file or text that
+
+00:27.540 --> 00:28.640
+we have right here.
+
+00:28.650 --> 00:34.540
+So if we chain a single liver or buy it in this file there has value will be completely different.
+
+00:34.650 --> 00:40.780
+And that is the unique thing about this hashing and when we get into what we are using it to you'll
+
+00:40.830 --> 00:43.290
+understand why this is such a unique way.
+
+00:43.290 --> 00:48.150
+But the important fact is that these algorithms are one way meant medical algorithms mean that you cannot
+
+00:48.150 --> 00:54.750
+take a test value and run it through the room again and then get your original text or file out of it.
+
+00:54.750 --> 00:55.840
+That is not possible.
+
+00:55.890 --> 01:01.020
+So it is one way and that is important to remember because what.
+
+01:01.020 --> 01:07.380
+But having this one way I will not generate our unique value based on the content that you are giving
+
+01:07.380 --> 01:07.590
+it.
+
+01:07.590 --> 01:11.440
+You really have like a fingerprint of that particular file.
+
+01:11.490 --> 01:17.610
+So for example your fingerprints on your hands uniquely identifies you as a person and it is the same
+
+01:17.970 --> 01:24.890
+for hashing there has value identifiers this file or text uniquely.
+
+01:24.990 --> 01:34.380
+Of course there are some algorithms that have duplicates meaning that some very rare cases that we are
+
+01:34.380 --> 01:40.260
+seeing that two files can get the same has values but we are slowly shifting away from these and using
+
+01:40.500 --> 01:47.010
+new algorithms that these duplicates are very rare on the edge from possible.
+
+01:47.010 --> 01:54.960
+And we are using this when we are verifying files and in our public key infrastructure because for firewood
+
+01:55.050 --> 02:01.830
+verification it is important for us that we can verify that argument file is what it is expected to
+
+02:01.830 --> 02:02.100
+be.
+
+02:02.130 --> 02:07.100
+So for example when you download a file from a Web site you sometimes will see that it has indeed five
+
+02:07.140 --> 02:14.180
+hash underneath or somewhere in the browser and that is because you can use that has value too.
+
+02:14.550 --> 02:19.420
+After you have downloaded the file on your machine you can run it to only five algorithm as well.
+
+02:19.440 --> 02:25.380
+And if you get the same hash value you know that no one have temper with this file on the way meaning
+
+02:25.380 --> 02:31.830
+that the file has gotten completely from the server that have this website and to your computer and
+
+02:31.830 --> 02:38.010
+there is not a man in the middle who has switched the file around so that you gain some malicious files
+
+02:38.400 --> 02:45.420
+on your computer and we are also using it for passwords because a secure system should never store passwords
+
+02:45.420 --> 02:47.340
+directly in the database.
+
+02:47.340 --> 02:49.050
+So let's see how does that works.
+
+02:49.050 --> 02:53.130
+So password hashing is seen on this picture right here.
+
+02:53.160 --> 02:58.560
+So we normally know this inform type where we have a username and we have a password.
+
+02:58.620 --> 03:03.840
+So what is happening is that Henry is lucky in which his username of Henry then he is entering his password
+
+03:04.500 --> 03:07.080
+which he has defined himself.
+
+03:07.080 --> 03:14.730
+Then our application will take his password run it through a hashing algorithm and then it will get
+
+03:14.730 --> 03:21.270
+a host value out of this password and then they will be storing the has value in the database instead.
+
+03:21.300 --> 03:29.220
+This means that only his password are able to generate this exact test that we saved for him this user.
+
+03:29.220 --> 03:35.460
+So if a hacker gets access to this database let's say the entire database got hacked they will only
+
+03:35.460 --> 03:40.980
+have the highest value mean that they cannot read the password in plaintext because if Henry used this
+
+03:40.980 --> 03:48.120
+password in multiple places and his password were in plaintext they basically had access to all other
+
+03:48.120 --> 03:50.760
+accounts that he used this on.
+
+03:50.910 --> 03:57.300
+Of course we see a similar problem if every website used the same hashing algorithm because then the
+
+03:57.390 --> 04:03.300
+password will get the same has value and that is why we also have a social value attached to this hashing
+
+04:03.300 --> 04:04.120
+over a password.
+
+04:04.120 --> 04:10.410
+But this final lecture the important part here is that you understand that we can use it for passwords
+
+04:10.430 --> 04:16.490
+storing these has values and the fact that we can't generate them the other way around.
+
+04:16.800 --> 04:19.620
+We have no way of getting his original password.
+
+04:19.620 --> 04:24.930
+This also means that the developers and owners of this system don't know his passwords as well because
+
+04:24.930 --> 04:30.720
+if they look up in the database all they see is this has value and they can't take this has value and
+
+04:30.720 --> 04:36.510
+try to use it as password because then it has value will get through the hashing over room and again
+
+04:36.960 --> 04:45.500
+get another has and then it wont miss this one so they can see his has value but not his actual password.
+
+04:45.510 --> 04:47.210
+If this is implemented in the right way.

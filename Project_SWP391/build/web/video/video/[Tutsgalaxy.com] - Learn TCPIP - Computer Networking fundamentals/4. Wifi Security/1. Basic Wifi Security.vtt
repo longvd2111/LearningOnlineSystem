@@ -1,0 +1,313 @@
+WEBVTT
+
+00:01.110 --> 00:07.180
+Wi-Fi security and why it is important to implement and be aware of how to use secure Wi-Fi.
+
+00:07.930 --> 00:10.610
+Basically Wi-Fi has replaced cables.
+
+00:10.630 --> 00:15.790
+In most cases so before when Wi-Fi weren't that popular.
+
+00:16.330 --> 00:21.630
+Almost every device computer and so on were connected to the Internet through cables.
+
+00:21.790 --> 00:29.740
+But now as mobile devices and instant the thing is starting to get more and more popular we are seeing
+
+00:29.740 --> 00:38.710
+that Wi-Fi is basically replacing all the Wired installations that we have and most computers are also
+
+00:38.710 --> 00:45.190
+now getting switched over to laptops meaning that they will most likely also be run on wireless.
+
+00:45.190 --> 00:53.380
+Of course there are still stays stationary computers and so on which use cables but will you get the
+
+00:53.950 --> 00:54.780
+point.
+
+00:54.790 --> 00:57.850
+So now no Wi-Fi has become such a public thing.
+
+00:57.940 --> 01:04.330
+We are facing our security threat that we did not have with the cable because when we were using cables
+
+01:04.690 --> 01:11.950
+only we had an easier time controlling who had access to our network because basically they needed to
+
+01:11.950 --> 01:18.850
+plug our cable in their device that then connected to our switch hub or router in order to be connected
+
+01:18.850 --> 01:19.700
+to a network.
+
+01:19.840 --> 01:28.420
+But with Wi-Fi basically every device that is within range of our Wi-Fi signal will be able to see this
+
+01:28.420 --> 01:29.020
+Wi-Fi.
+
+01:29.020 --> 01:36.870
+And if it is not protected in the right way they will be able to connect UID and start collecting packages
+
+01:36.900 --> 01:39.040
+and information from their network.
+
+01:39.950 --> 01:50.630
+So the most important thing when it is when we're talking about Wi-Fi and wireless security is the wireless
+
+01:50.630 --> 01:56.990
+encryption because when if you're just transferring packages over an open network with no encryption
+
+01:58.190 --> 02:06.770
+you can imagine that everyone that is within the signal range of this way if I could just plug in and
+
+02:06.890 --> 02:13.190
+connect to this Wi-Fi and then then they will be able to collect your packages and because you did not
+
+02:13.190 --> 02:20.260
+encrypt the trafficked that you send between you and the router or hub or switch you will basically
+
+02:20.800 --> 02:25.080
+be giving them all the information to read because it will be in plaintext.
+
+02:25.120 --> 02:32.800
+So that is why open Wi-Fi networks are very bad and you should avoid them at all cost if you can in
+
+02:32.800 --> 02:33.140
+future.
+
+02:33.140 --> 02:39.430
+Later we will look at weapons and other approaches that you can use to still connect to your local open
+
+02:39.580 --> 02:42.460
+Wi-Fi at Starbucks and still be protected.
+
+02:42.730 --> 02:48.880
+But here we will focus on our setup that we will have at home or at work.
+
+02:48.880 --> 02:57.080
+So we have these different protocols that we can use to encrypt our traffic and the access to our Wi-Fi.
+
+02:57.160 --> 03:01.340
+The first one is WIPP where equal and privacy.
+
+03:01.390 --> 03:09.490
+That was the original protocol used when Wi-Fi first came along and you should never ever use this protocol
+
+03:09.490 --> 03:11.530
+at all because it is very easily broken.
+
+03:11.530 --> 03:18.940
+There are some flaws in the mathematics of this encryption protocol that makes it very easy for people
+
+03:18.940 --> 03:27.370
+to crack the encryption key and thereby decrypt the traffic that you are sending and get access to you
+
+03:27.430 --> 03:28.600
+to Wi-Fi.
+
+03:28.720 --> 03:33.770
+Then we have the W EPA which is wildfire protected access.
+
+03:34.000 --> 03:40.080
+That was a temporary enhancement of the original protocol and it provided some more security.
+
+03:40.090 --> 03:47.140
+But again it has inherited some of the security flaws that were in the original protocol.
+
+03:47.140 --> 03:50.550
+And this is now also something that I don't recommend you to use.
+
+03:50.560 --> 03:57.640
+And if you see a network that is having this or your home network is only secured with this protocol
+
+03:57.880 --> 04:03.880
+you should try at all cause to either switch to this protocol and if your device does not support that
+
+04:04.480 --> 04:07.890
+I hope it does because every new device does so.
+
+04:07.960 --> 04:13.420
+But if you have a variable device that does not support this then I recommend to replace that device
+
+04:13.740 --> 04:20.980
+so that you can use the Wi-Fi protect access to protocol because that is currently the most secure one
+
+04:20.980 --> 04:25.630
+to use when talking about Wi-Fi security and traffic encryption.
+
+04:25.930 --> 04:34.720
+It replaces the original WPA protocol and it uses a as advanced encryption standard which is a much
+
+04:34.990 --> 04:41.700
+more secure way of encrypting your data and network.
+
+04:41.770 --> 04:46.830
+Again it is not that this is bullet proof and that it will not ever be hacked.
+
+04:46.840 --> 04:49.650
+There are some ways it is very difficult.
+
+04:49.720 --> 04:53.570
+But again nothing is totally secure.
+
+04:53.860 --> 04:58.810
+So it's not like when you're using this you can say OK I'm secure if I'm for more everything.
+
+04:59.220 --> 05:06.400
+Some type in some future there will be some hacks and found some flaws in this as well.
+
+05:06.400 --> 05:13.830
+And then this will become depreciated as well but currently this is good to go and you can use this.
+
+05:14.080 --> 05:22.420
+And there are already coming some new protocols along there are the WPA tree which which is even more
+
+05:22.420 --> 05:27.710
+secure protocol but that is not as widely used as this is.
+
+05:27.730 --> 05:34.390
+So again be sure that you are using this on your network when you are setting it up and then you should
+
+05:34.390 --> 05:40.190
+be in a safe manner when it comes to encrypting your unit again and traffic.
+
+05:40.520 --> 05:49.130
+But there are also other things that we can do to secure our wireless network because wireless networks
+
+05:49.440 --> 05:56.820
+as mentioned is based on signals and the great thing about wireless network is that we can connect any
+
+05:56.820 --> 06:02.360
+of our devices as long as we are within range of our signal.
+
+06:02.520 --> 06:08.280
+But at this also a security risk because it is not only us who can connect.
+
+06:08.280 --> 06:14.000
+It is also everybody else who is within this range that is able to connect and start to try Craig or
+
+06:14.040 --> 06:18.240
+network or collect packages from our network.
+
+06:18.270 --> 06:25.770
+So besides using encryption to secure network you should also be aware of how strong of a signal you're
+
+06:25.770 --> 06:37.170
+using and where you are placing your access point because people from outside your house or office can
+
+06:37.170 --> 06:42.660
+actually access your network as well as you have might seen if you're traveling through a city with
+
+06:42.660 --> 06:44.220
+a lot of buildings.
+
+06:44.220 --> 06:50.670
+If you go to your mobile and look at what Wi-Fi is available you will see a very long list because there
+
+06:50.670 --> 06:59.000
+are so many access points who is just broadcasting the signal out because they are.
+
+06:59.040 --> 07:01.950
+The signal is so strong in most newer devices.
+
+07:02.130 --> 07:07.980
+So it is important that you are aware of where you place your device and the strength of the signal
+
+07:08.070 --> 07:14.160
+that you're sending because if you look at this picture right here let's imagine we are in this office
+
+07:14.160 --> 07:18.140
+building right here and this is our wireless router.
+
+07:18.180 --> 07:25.500
+This is sending out a signal in every direction with a very strong strength meaning that a malicious
+
+07:25.500 --> 07:32.670
+user could sit in this car for example and try to crack our network if we had an open network he could
+
+07:32.670 --> 07:33.630
+just log on.
+
+07:33.650 --> 07:39.810
+Even though that he is sitting on the street within his car you can actually have the same benefit as
+
+07:39.810 --> 07:48.380
+if you were sitting next to you in your own office place but also if your building is placed near to
+
+07:48.380 --> 07:54.740
+a park or other public place fuel could actually just be sitting outside chilling with a computer and
+
+07:54.740 --> 07:59.490
+they could try to break into your network and that is of course something that we want to avoid.
+
+07:59.570 --> 08:05.360
+Even though we have password and encryption sit on or known at work it is still a very low security
+
+08:05.360 --> 08:12.540
+risk that people can unharmed they sit and try different approaches to break unit.
+
+08:13.040 --> 08:18.380
+So what you should be aware of is how you place your device and what strength.
+
+08:18.380 --> 08:24.050
+So imagine that we had this office building right here and we had the two top floors.
+
+08:24.050 --> 08:32.040
+So there is no reason that we have our network being available at the first floor of this building.
+
+08:32.040 --> 08:38.280
+So what we could do is to first move the router because instead of placing it at our first floor when
+
+08:38.280 --> 08:45.090
+we have the above floor as well meaning that we will broadcast to places that we do not own and is not
+
+08:45.090 --> 08:53.400
+part of our office we will just move the RA rah up to the second floor which we are also owning.
+
+08:53.400 --> 09:00.360
+And then we will adjust the signal so that it is only broadcasting to the very end of our building and
+
+09:00.360 --> 09:07.410
+you can do that by simply just taking our wireless network card or laptop or mobile and then just go
+
+09:07.410 --> 09:12.550
+to the first corner of your office and then see do I have a signal right here.
+
+09:12.660 --> 09:18.270
+If the signal is very strong then there is a very good chance that on the other side of your wall or
+
+09:18.270 --> 09:21.070
+below the floor there is a signal as well.
+
+09:21.150 --> 09:27.870
+So you should try to minimize the strength of the signal in the corners because then you know that there
+
+09:27.870 --> 09:34.350
+is a very low possibility that people from outside your actual physical space can connect to you to
+
+09:34.350 --> 09:36.200
+your wireless network.
+
+09:36.210 --> 09:41.410
+So this was a short introduction to Wi-Fi security.
+
+09:41.490 --> 09:46.250
+We will not go into that with the encryption algorithms because they will be for another tool.
+
+09:46.260 --> 09:48.750
+This is the network basics.
+
+09:48.750 --> 09:54.810
+So we just covered the basic aspects of this Wi-Fi security and in it coming lectures we will look at
+
+09:54.810 --> 10:01.680
+how we can use different approaches to secure our communication when sitting on open networks by using
+
+10:01.680 --> 10:08.670
+weapons and we will also look at how we can set up different tunnels and how we can use SSA age to connect
+
+10:08.680 --> 10:11.730
+security to over the Internet.

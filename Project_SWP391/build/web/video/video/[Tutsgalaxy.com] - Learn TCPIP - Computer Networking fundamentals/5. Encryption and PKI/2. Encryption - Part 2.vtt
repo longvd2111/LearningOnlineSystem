@@ -1,0 +1,130 @@
+WEBVTT
+
+00:00.870 --> 00:09.660
+So when talking about encryption and especially in networking we have symmetric and asymmetric encryption.
+
+00:09.660 --> 00:14.410
+So these are the two types that we will be focusing on for the rest of this course.
+
+00:14.430 --> 00:21.750
+So the symmetric room approach is where we have the same encryption key.
+
+00:21.780 --> 00:28.710
+Meaning the same secret between the sender and the receiver and then both of us of course know the algorithm.
+
+00:28.710 --> 00:34.620
+So for example if we have this a yes algorithm right here then we are using to server room to encrypt
+
+00:34.770 --> 00:37.590
+and decrypt what we are using the same key.
+
+00:37.710 --> 00:41.700
+So the key used to encrypt is also the same key used to decrypt.
+
+00:41.700 --> 00:46.580
+This means that the sender and the receiver needs to know the same key.
+
+00:46.650 --> 00:53.440
+So by using this you will lose what we talked about in the last lecture none repudiation.
+
+00:53.610 --> 00:59.970
+Meaning that we can't really track down if something goes wrong or someone get access to some of our
+
+00:59.970 --> 01:09.210
+clear takes because every party involved use the same key whereas in symmetric Elementary we can hand
+
+01:09.300 --> 01:15.420
+out different keys to different people and then we know if something gets broken or something a compromised
+
+01:15.450 --> 01:18.720
+we can track it down to which key was compromised.
+
+01:18.930 --> 01:23.970
+But here we are sharing the same key meaning that we need to find a way to transfer this key.
+
+01:24.120 --> 01:31.830
+So this is one of the downsides of symmetric key encryption because we need to transfer the keys securely
+
+01:31.830 --> 01:40.800
+because if someone gets hold of the key on the way to the receiver then he can decrypt the message in
+
+01:40.800 --> 01:44.040
+the same way as our intended receiver can.
+
+01:44.040 --> 01:51.990
+So we can really tell the difference between people when we are using this then we have asymmetric encryption
+
+01:52.410 --> 01:59.100
+where we have different keys and for different parties meaning that we will have a public key and a
+
+01:59.100 --> 01:59.850
+private key.
+
+02:00.210 --> 02:02.570
+So take for example this one right here.
+
+02:02.820 --> 02:07.010
+Our private key is a key that we need to keep for ourself.
+
+02:07.170 --> 02:15.810
+Meaning that this is a hidden key then we use this private key to encrypt this message right here.
+
+02:15.880 --> 02:21.960
+So our private key is used to encrypted and then we have a public key associated with this private key.
+
+02:22.210 --> 02:26.650
+So the public key allow us to decrypt the message.
+
+02:26.650 --> 02:33.160
+So if we send a message by encrypting it using the private it will get into ciphertext our receiver
+
+02:33.190 --> 02:35.980
+can use the public key to decrypted.
+
+02:35.980 --> 02:41.800
+Then he also knows that we are the one sending it because our public key will only work with our private
+
+02:41.800 --> 02:42.100
+key.
+
+02:42.100 --> 02:44.830
+So this is a pair of keys.
+
+02:45.010 --> 02:51.370
+And then when he needs to send something to us he can use our public key which is available to the people
+
+02:51.370 --> 02:53.470
+we choose to share it with.
+
+02:53.500 --> 02:55.660
+Remember private keys should never be shared.
+
+02:55.660 --> 02:58.020
+You should keep this secret at all cost.
+
+02:58.030 --> 03:02.940
+But the public key can be shared to anyone you need to communicate with.
+
+03:02.950 --> 03:06.540
+So when you're a partner will send you a message.
+
+03:06.550 --> 03:10.950
+He will use the public key to encrypted and then he will send a cipher text.
+
+03:10.960 --> 03:15.370
+And the only thing that that can decrypt this message is your private key.
+
+03:15.490 --> 03:23.850
+So you're not using the same key for the encryption and decryption besides these two encryption ways.
+
+03:23.850 --> 03:32.820
+We also have one way hash which is we take a value using our hashing algorithm and then we hash it into
+
+03:32.970 --> 03:40.950
+a cipher text and we can't trace it back meaning that we we cannot take this text and get it into its
+
+03:40.980 --> 03:41.910
+original value.
+
+03:41.910 --> 03:43.650
+It's a one way to.

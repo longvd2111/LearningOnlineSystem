@@ -1,0 +1,382 @@
+WEBVTT
+
+00:00.420 --> 00:07.110
+First of all IP addresses IP addresses is logical addresses meaning that they are not hardcoded into
+
+00:07.110 --> 00:13.830
+our network cut and they can thereby be switched from day to day mean that the IP address that one of
+
+00:13.830 --> 00:21.180
+your devices today maybe not be the address that it has tomorrow because your router may be giving another
+
+00:21.180 --> 00:25.300
+device that IP when you device disconnect from the Internet.
+
+00:25.650 --> 00:31.290
+And also the IP address that you have at your Internet service provider can also be changed but that
+
+00:31.290 --> 00:33.620
+is a bit more difficult to do.
+
+00:33.730 --> 00:38.400
+So if she is a she in the picture right here we have different IP addresses.
+
+00:38.400 --> 00:42.900
+We have our IP V4 address which is this one right here.
+
+00:43.080 --> 00:46.070
+And we have our IP B6 address right here.
+
+00:46.080 --> 00:49.300
+And as you see there is a clear difference between the two of them.
+
+00:49.320 --> 00:53.760
+So we're going to see what the difference is.
+
+00:53.760 --> 00:58.450
+But first of all you need to understand that there are public and private eyepiece.
+
+00:58.590 --> 01:03.100
+So the private APIs are the ones that are internally in your network.
+
+01:03.120 --> 01:09.360
+So if you have a computer or any device connected to your router at your home they all have a private
+
+01:09.420 --> 01:16.740
+IP meaning that it is your router that gives out these APIs and most likely these eyepiece will look
+
+01:16.740 --> 01:24.690
+like this right here as we see we have these two computers and they share similar addresses where this
+
+01:24.690 --> 01:27.000
+is ending it hundred.
+
+01:27.090 --> 01:33.760
+And this is one hundred and one and then all the traffic internally on your network is controlled bound
+
+01:33.890 --> 01:39.780
+by your rara based on the IP that has been distributed in the DTP.
+
+01:40.320 --> 01:46.450
+Then we have the public IP which is the one that is showing outside to the world.
+
+01:46.710 --> 01:53.760
+So this is the IP that the internet web pages that you visit will be having in the logs when you're
+
+01:53.760 --> 02:01.350
+connecting to them or whoever you communicate with on the outside we'll see this IP because this is
+
+02:01.350 --> 02:05.090
+your public IP given to you by your Internet service provider.
+
+02:05.100 --> 02:08.910
+So this is the difference between the public and the private IP.
+
+02:08.910 --> 02:15.870
+So if you do a scan on your network and see all these internally APIs and then you go to do what my
+
+02:15.870 --> 02:22.410
+IP that com or some similar site you will see that even though you see that your computer have this
+
+02:22.410 --> 02:27.150
+address this is the one that is getting showed to the outside world.
+
+02:27.330 --> 02:29.570
+But let's get into the IP versions.
+
+02:29.580 --> 02:36.180
+This is IP vision for which is the old version and it is currently being changed so that it will be
+
+02:36.180 --> 02:46.470
+moved over to IP B6 on the wider internet and not necessarily internally because IP for version consists
+
+02:46.470 --> 02:54.900
+of 32 bit addresses meaning that we have failed to bits and this is that is because our computers can
+
+02:54.900 --> 03:02.550
+only understand binary language meaning once and zeros where if you have a one meaning that it is on
+
+03:02.850 --> 03:03.440
+zero.
+
+03:03.540 --> 03:06.590
+It is off similar to your lightning switch.
+
+03:06.630 --> 03:07.810
+It can be on and off.
+
+03:07.950 --> 03:12.150
+And that is really down in the basic what a computer understand.
+
+03:12.180 --> 03:18.140
+So an IP for address is divided into four sets of eight binaries.
+
+03:18.160 --> 03:25.750
+So for example this is the IP address and this right here Kurzban to say an address similar to this
+
+03:25.750 --> 03:33.520
+one because this has been translated into the numbers where as these represent the binaries.
+
+03:33.520 --> 03:38.710
+So this is down to the basic binary address of our IP formation.
+
+03:38.860 --> 03:47.750
+So let's have a look at how this is translated from clear binaries into the four sets we saw before.
+
+03:47.770 --> 03:55.030
+So now we have our binary address right here with force faucet of a binary and we're using this little
+
+03:55.150 --> 04:01.300
+template to translate it into the numbers that we saw in our address and which is the ones we are seeing
+
+04:01.840 --> 04:04.430
+when talking about IP before.
+
+04:04.450 --> 04:07.680
+So we just take these banners at them into this right here.
+
+04:08.540 --> 04:15.820
+Just small like so then we simply just say one because the first one is one that we see one then we
+
+04:15.820 --> 04:28.120
+have zero then we have one and one and we have a serial and the last twos ones as well.
+
+04:28.170 --> 04:34.880
+So now these right here match the first set of eight right here.
+
+04:34.890 --> 04:38.790
+Then what we have to do is simply just to add these together.
+
+04:38.880 --> 04:50.530
+So we simply just see 180 plus seat four plus 16 plus eight plus two plus one.
+
+04:50.790 --> 04:56.600
+And that's equal to two hundred and nineteen.
+
+04:56.990 --> 05:02.370
+So this is the first number so this is going to be two hundred and nineteen.
+
+05:02.900 --> 05:06.950
+And then the next group and the next to the next group again we do the similar thing.
+
+05:06.950 --> 05:13.310
+So and examiners will be that we just end up with something like this.
+
+05:13.320 --> 05:14.570
+Oh so.
+
+05:15.350 --> 05:20.090
+So this could be an address that we could end up if these were the right numbers.
+
+05:20.090 --> 05:21.290
+This is just an example.
+
+05:21.290 --> 05:23.980
+So this is not what is going on here.
+
+05:24.050 --> 05:31.100
+Well you can try it on your own and calculate the exact address of the last three sets we can however
+
+05:31.190 --> 05:33.140
+also go in the opposite direction.
+
+05:33.260 --> 05:43.040
+So if you remove this and let's say we didn't know this binary right here but we only have this IP and
+
+05:43.040 --> 05:52.380
+we needed to know what kind of binary group said would we have then we said we just take 219 and we
+
+05:52.400 --> 05:57.550
+just oh just move is
+
+06:07.000 --> 06:07.710
+like so.
+
+06:07.870 --> 06:13.270
+And then we simply we just say two hundred nineteen can two hundred and nineteen be within one hundred
+
+06:13.290 --> 06:20.280
+twenty eight years it can and then we simply subtract one hundred and twenty eight from two hundred
+
+06:20.280 --> 06:21.300
+nineteen.
+
+06:21.460 --> 06:26.710
+Now we say can sixty four be within the value that we have left.
+
+06:26.710 --> 06:37.890
+And again it can and now we see you can further to be within this value it cannot because we have already
+
+06:37.890 --> 06:40.940
+subtracted one hundred and twenty eight and sixty four.
+
+06:41.040 --> 06:47.940
+So this will be a zero and then again we say can sixteen be within the value that we have left it can
+
+06:49.320 --> 06:54.790
+can it be within the remaining value now that we have subtract about one hundred twenty eight sixty
+
+06:54.810 --> 07:03.300
+four and sixteen it can count for being the remaining value but as this is tree it can't.
+
+07:03.320 --> 07:09.660
+So this will be a zero as well and then two and one can be within this so.
+
+07:09.700 --> 07:17.540
+Oh so this is the way that you can calculate the values in both directions.
+
+07:17.540 --> 07:26.810
+So now it's time to look into what the problems it is with the current IP version 4 so not only have
+
+07:26.810 --> 07:33.320
+seen what the IP version 4 looked like in time to talk about the problems with it the problem with this
+
+07:33.410 --> 07:42.680
+IP version is that as we it is a 32 bit address it is only possible to have 4 billion different addresses
+
+07:43.520 --> 07:49.190
+and as the world get more and more devices connected to the internet we now not only have computers
+
+07:49.190 --> 07:57.200
+we have webcams we have kitchens to we have cars and robots and all kinds of different stuff is getting
+
+07:57.200 --> 08:04.190
+connected to news meaning that the current version simply do not have enough unique eyepiece and we
+
+08:04.190 --> 08:11.360
+can generate enough unique addresses out of this 32 bit address which is IP version 4.
+
+08:11.720 --> 08:14.080
+So the world needs something new.
+
+08:14.080 --> 08:18.900
+And that is where IP IP version 6 comes into play.
+
+08:19.160 --> 08:25.820
+So as you might remember from the first lad we saw an IP version 6 which is this one right here.
+
+08:26.000 --> 08:32.170
+And instead of being of the two bits This is one hundred and twenty eight bits and it is based on XA
+
+08:32.300 --> 08:41.480
+decimals and we can have trillions of trillions of unique addresses in this 128 bit address range because
+
+08:41.570 --> 08:50.880
+each of these characters is based on a four binary group and we will head over again to see how such
+
+08:50.880 --> 08:53.150
+is generated in hexadecimal.
+
+08:53.150 --> 08:59.860
+So now to how we can calculate the hexadecimal IP 6 address based on the binary.
+
+08:59.930 --> 09:07.190
+So as we see right here we have the first group of F E eight 0 which is the one that we are going to
+
+09:07.190 --> 09:16.270
+try to conclude with the F so as we see right here we have the decimal right here and we have the hexagon
+
+09:16.440 --> 09:17.320
+dismal right here.
+
+09:17.350 --> 09:23.230
+So from 0 to 9 d equals 0 0 0 4 4 8 8.
+
+09:23.500 --> 09:30.490
+But when we get to 10 then the hexadecimal is going to be a eleven b and so forth down to 15 which is
+
+09:30.580 --> 09:37.170
+F so the way that we can calculate this in binary is similar to what we learned before.
+
+09:37.310 --> 09:45.800
+So we can see if is it within if which correspond to 15 years it is.
+
+09:45.800 --> 09:55.730
+So we will see one then we subtract eight from 15 and then we say is four within this value again.
+
+09:55.730 --> 09:57.800
+Yes it is.
+
+09:57.800 --> 10:00.440
+And then we can do that for the rest.
+
+10:00.470 --> 10:09.100
+And since f is the largest value and these equals 15 we can just add the last ones at once.
+
+10:09.110 --> 10:20.570
+So now we know that the first binary set of this hexadecimal group is going to be 1 1 1 1 corresponding
+
+10:20.570 --> 10:27.620
+to the F and then we can do that for each of the values and then to illustrate and the like symbol.
+
+10:27.620 --> 10:39.880
+Now we could just say 1 1 1 and then the next value let's just delete this at the next value will be
+
+10:39.890 --> 10:40.180
+e.
+
+10:40.680 --> 10:42.230
+So let's see.
+
+10:42.330 --> 10:45.510
+E And that correspond to the value below here.
+
+10:45.520 --> 10:51.640
+So that will just be 1 1 1 0 because we are missing the last value from 15.
+
+10:51.760 --> 10:54.860
+So that will be let's see.
+
+10:54.890 --> 10:55.360
+Right.
+
+10:56.900 --> 11:03.320
+There will be 1 1 1 0 and then we have an 8 and that is 8.
+
+11:03.320 --> 11:09.740
+So that will just be 1 and then the rest will be serious relative 0 0 0 and then we have a zero meaning
+
+11:09.740 --> 11:12.790
+that it is false heroes or 0 0 0 0.
+
+11:12.860 --> 11:21.350
+So this value right here is the binary format of this first four characters right here.
+
+11:21.370 --> 11:28.270
+So that is why the IP version 6 can have so many addresses because there there's so many more opportunities
+
+11:28.270 --> 11:34.000
+to have unique addresses within this address space of 128 bits.
+
+11:34.120 --> 11:40.060
+Then one last thing to be aware of is this double call on right here.
+
+11:40.840 --> 11:48.460
+So if you see an address for example what we have in the picture and then call on like this and then
+
+11:48.460 --> 11:55.840
+it continues then it means that because as you see right here this is not 128 bits because the address
+
+11:55.840 --> 11:57.130
+is much longer.
+
+11:57.130 --> 11:59.100
+If it is filled with all the values.
+
+11:59.110 --> 12:04.720
+But when we have two column columns like this this means that from this point on onto the next point
+
+12:04.780 --> 12:08.300
+right here it should just be filled with zeros.
+
+12:08.500 --> 12:16.960
+And that is done for us to not have such long addresses but we can utilize this feature just to remove
+
+12:17.020 --> 12:22.330
+all the zeros from the address base but our computer will know that there should be the remaining values
+
+12:22.420 --> 12:27.690
+up to 180 but when looking at this length it should just be filled with zeros.
+
+12:27.730 --> 12:31.510
+So this was IP four and IP six.

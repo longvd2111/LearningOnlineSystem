@@ -1,0 +1,235 @@
+WEBVTT
+
+00:00.210 --> 00:06.030
+So rounding and switching what is the difference as you see in the picture right here.
+
+00:06.030 --> 00:11.310
+We have multiple devices and these two different things to our network.
+
+00:11.310 --> 00:17.580
+So switching is basically happening on the same network meaning that with internally within your own
+
+00:17.580 --> 00:24.300
+network whereas routing is communication between different networks and that is why you see these two
+
+00:24.300 --> 00:34.370
+devices hub and switch is on their own network whereas Aurora is connecting them so what is the different
+
+00:34.370 --> 00:36.100
+devices that we're going to talk about.
+
+00:36.110 --> 00:40.580
+We're going to talk about a hub switch a router and a repeater
+
+00:43.330 --> 00:49.860
+So what is a hub will a hub is a very dumb device as you see in the picture here.
+
+00:49.870 --> 00:55.870
+You have probably seen one before or you maybe use one in your own network right now but what a hub
+
+00:55.870 --> 01:04.360
+to us is basically just received data and then send it out to everyone connected to the hub and then
+
+01:04.420 --> 01:09.490
+it is simply up to the computers to decide will they want to accept or reject this communication.
+
+01:09.730 --> 01:16.480
+And these network packages this means that if you are sending some information to use a B then if you
+
+01:16.480 --> 01:26.290
+have a malicious user in the device C then unless his computer rejects the information to use a b he
+
+01:26.290 --> 01:31.220
+will actually also get that information because the hub doesn't care who it sends to it just say OK
+
+01:31.250 --> 01:35.820
+here is some data and it just push it out to everyone.
+
+01:36.370 --> 01:38.500
+Then we have a switch.
+
+01:38.620 --> 01:43.840
+This is truly called a smart hub because it does a bit more than a hub.
+
+01:43.900 --> 01:48.100
+This one keeps track on the different computers and devices connected to it.
+
+01:48.430 --> 01:54.220
+It does so by making tracks in a table of the MAC addresses.
+
+01:54.310 --> 01:59.950
+We have discussed mega address in previous sections and this is Layer 2 and it was a model.
+
+02:00.370 --> 02:08.980
+So the switch will start to record what kind of MAC address is being used from the different port within
+
+02:08.980 --> 02:16.150
+the device and then it will keep track on what port a specific MAC address is connected to because then
+
+02:16.150 --> 02:21.160
+it knows that if some information come from this MAC address to this MAC address then it needs to go
+
+02:21.160 --> 02:23.020
+through these two ports.
+
+02:23.380 --> 02:29.740
+But this will happen over time so when at the beginning of using a switch when you connect your devices
+
+02:30.100 --> 02:35.680
+it is simply just acting like a hub until it starts to figure out which mega dresses belong to which
+
+02:35.680 --> 02:46.860
+ports then we have a repeater a repeater is compared to routers and not routers compared to switches
+
+02:46.890 --> 02:48.270
+and hubs.
+
+02:48.270 --> 02:53.790
+It is used for making the signal stronger.
+
+02:53.790 --> 03:00.960
+And as you see on the picture right here we have a repeater at the end of the range of this wireless
+
+03:00.960 --> 03:01.950
+network.
+
+03:01.950 --> 03:07.500
+And because we have this repeater then it is capable of receiving messages from this computer right
+
+03:07.500 --> 03:11.930
+here and then enhance the signal so they can reach reach the computers.
+
+03:11.940 --> 03:18.240
+That is actually without the range of this main point right here.
+
+03:18.240 --> 03:20.790
+And it can still do so in two different ways.
+
+03:20.790 --> 03:30.210
+It can amplify meaning that it just smack their message out with more power and it can do signal regeneration
+
+03:30.210 --> 03:38.130
+meaning that it tries to clean up the signal because when our message to transfer either true to our
+
+03:38.130 --> 03:45.780
+true cable there will be some magnetic interference and this electric mid-day interference that will
+
+03:47.430 --> 03:50.170
+it and then destroy the package.
+
+03:50.190 --> 03:57.900
+And that is why we have each these ranges because at some point the device is simply not able to reach
+
+03:57.960 --> 03:59.240
+out anymore.
+
+03:59.250 --> 04:06.000
+So by having this repeater it can enhance the signal so that we can reach a much larger area.
+
+04:06.030 --> 04:12.270
+So we can set these repeaters up on your network at specific locations where you want to signal to be
+
+04:12.270 --> 04:12.720
+in hands.
+
+04:12.720 --> 04:23.580
+This can be where you have thick walls or where you simply just have too long of a path between your
+
+04:23.580 --> 04:25.940
+devices and your main router.
+
+04:25.950 --> 04:32.070
+For example if you have your router located at one another house and you want a signal at the very end
+
+04:32.190 --> 04:39.000
+of your ground maybe into rats or something then you can use it's a repeater.
+
+04:39.750 --> 04:42.540
+And at the ending we have the rotors.
+
+04:42.540 --> 04:50.580
+These are the real smart devices and the ones that make all this networking possible because what a
+
+04:50.580 --> 04:57.780
+router is compared to a switch and a hub is a very very smart device.
+
+04:57.810 --> 05:03.150
+It's managed all the traffic between our internally and the public network.
+
+05:03.150 --> 05:09.730
+So around I actually have to eyepiece it has the public IP which is the IP that the Internet is seeing.
+
+05:09.750 --> 05:15.450
+And then the head has a private IP IP which is the IP used by your devices on your internal network
+
+05:16.560 --> 05:18.960
+and most routers also have build and firewalls.
+
+05:18.960 --> 05:28.110
+This means that you can manage your firewall rules based on who is allowed to connect and move packages
+
+05:28.200 --> 05:36.220
+to and from your network and the public whereas switches and hubs simply doesn't have such things.
+
+05:36.220 --> 05:44.290
+It will just allow everything to happen and then most rioters also have what is called DHEA piece of
+
+05:44.290 --> 05:44.800
+a building.
+
+05:45.400 --> 05:48.010
+And what such server is doing is to
+
+05:50.950 --> 05:57.220
+make your computers have a piece because once you connect to a network as we discussed in previous lectures
+
+05:58.120 --> 06:01.870
+about iPods and mac addresses you computer will only have a mac address.
+
+06:01.870 --> 06:10.180
+So it needs an IP from somewhere and that somewhere is to be good from such DSP DHB server which is
+
+06:10.180 --> 06:11.270
+built into your router.
+
+06:11.320 --> 06:18.400
+So what your computer will be doing when it is connected to the network it will use this flow right
+
+06:18.400 --> 06:25.180
+here where we first discover we tried to find where the server is located then this is located probably
+
+06:25.180 --> 06:29.600
+within your router and then you're allowed to see this and says OK.
+
+06:29.650 --> 06:32.270
+You need a new IP then it will make an offer.
+
+06:32.440 --> 06:35.550
+Use this IP because this IP is the free.
+
+06:35.710 --> 06:42.520
+And then you will just make a request your computer on this and say okay fine I can use this IP and
+
+06:42.520 --> 06:49.330
+then you're ratable and which has this the HP server will acknowledge and say OK fine I will note that
+
+06:49.330 --> 06:51.540
+down and you are now assigned to this IP.
+
+06:51.580 --> 06:55.170
+So this is basically how you get an IP internally.
+
+06:55.180 --> 07:02.170
+So now we have quickly discussed the four devices if you want you can look them up yourself and see
+
+07:02.470 --> 07:04.180
+all the specific terms.
+
+07:04.180 --> 07:09.790
+Maybe look up the device that you have on your network and all to see what is actually on your network
+
+07:10.110 --> 07:16.690
+what a configuration is possible then your order in order to to understand this a bit better.
+
+07:16.690 --> 07:19.330
+So now we are ready to move on and I will see you next picture.

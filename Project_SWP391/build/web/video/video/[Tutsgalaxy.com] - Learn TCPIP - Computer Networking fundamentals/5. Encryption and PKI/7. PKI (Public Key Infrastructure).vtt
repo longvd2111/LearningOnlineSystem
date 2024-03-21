@@ -1,0 +1,199 @@
+WEBVTT
+
+00:00.090 --> 00:03.870
+So what is PGI public key infrastructure.
+
+00:03.870 --> 00:09.030
+As mentioned we discussed it a bit in the encryption sections where we looked at symmetric and asymmetric
+
+00:09.030 --> 00:17.790
+keys and PCI is based on asymmetric Keys where we have public and private keys so remember that we have
+
+00:17.790 --> 00:24.270
+the private keys that we use to encrypt a given data with and then we are sharing our public key which
+
+00:24.270 --> 00:28.740
+is related to our private key so that the users can decrypt our content.
+
+00:28.860 --> 00:38.040
+And this is really what this PGI approach is based on the public private key relation and how we can
+
+00:38.040 --> 00:40.900
+trust that a sinner is who they say they are.
+
+00:40.950 --> 00:43.460
+So let's take a look at it.
+
+00:43.470 --> 00:49.950
+So in the PGI we have something called S.A. the certificate authority and as you see on this picture
+
+00:49.950 --> 00:55.340
+right here this authority is on the tab here at this building.
+
+00:55.650 --> 00:58.120
+And then we have a company one and a company too.
+
+00:58.290 --> 01:05.160
+So company one needs to talk to company two and since they are going to do this in an encrypted manner
+
+01:05.220 --> 01:11.430
+and company two wants to ensure that what they are receiving is from company one they are using this
+
+01:12.150 --> 01:15.520
+certificate authority as their main trust source.
+
+01:15.540 --> 01:21.990
+This means that both Company 1 and Company 2 are trusting this third party.
+
+01:21.990 --> 01:29.820
+So this could be the fourth party company or government organization or someone that both of them are
+
+01:29.820 --> 01:30.970
+able to trust.
+
+01:31.110 --> 01:36.420
+Meaning that company two don't have to trust company one alone because what is company one wanted to
+
+01:36.450 --> 01:38.190
+cheat company two.
+
+01:38.310 --> 01:40.300
+So they are trusting this one.
+
+01:40.380 --> 01:52.020
+This means that the certificate of are the key manager in this PCI set up right here.
+
+01:52.020 --> 02:00.930
+So DEA is going to manage and create the public and private keys for the companies involved right here.
+
+02:00.930 --> 02:08.520
+So what this is doing is that when company one wants a certificate they are asking the CIA for private
+
+02:08.520 --> 02:09.230
+key.
+
+02:09.300 --> 02:15.510
+So the CIA will generate a private and public key for company one that they will hand out the private
+
+02:15.510 --> 02:21.890
+key to Company 1 and then they will sign this private key with their own public key.
+
+02:21.930 --> 02:29.010
+So see the CIA is saying the private key with the public key so now company one has a private key which
+
+02:29.010 --> 02:31.970
+has been signed by the CIA.
+
+02:32.010 --> 02:38.640
+So when the company one wants to send the data to company 2 they are going to use the private key they
+
+02:38.640 --> 02:44.180
+received to encrypted data so they used a private key then the encrypted data and sent it over to company
+
+02:44.180 --> 02:45.940
+two.
+
+02:46.500 --> 02:54.150
+Now that company too has received this data they of course want to decrypt it because they can look
+
+02:54.150 --> 02:55.410
+at what it is based on.
+
+02:56.400 --> 03:02.970
+So since that the data that they encrypted is based on a private key that has been signed by the CIA
+
+03:03.960 --> 03:13.830
+the company you can ask the CIA for the public key of their private key because privately they used
+
+03:14.250 --> 03:15.920
+to sign the certificate.
+
+03:15.990 --> 03:27.190
+So only their public key is capable of decrypting the signed a certificate part of this data because
+
+03:27.940 --> 03:31.530
+company one got the private key with the same value.
+
+03:31.780 --> 03:38.410
+So company two is getting the company one probably key and they can use to see a public key to decrypt
+
+03:38.710 --> 03:39.550
+the same value.
+
+03:39.670 --> 03:47.770
+And if they are able to decrypt the same value then they know that company one is who they say they
+
+03:47.770 --> 03:56.510
+are because they trust that the CIA has only handed out this same certificate to the company won and
+
+03:56.510 --> 04:01.850
+not some random person who said yeah I'm an employee at company one.
+
+04:01.850 --> 04:07.090
+Just give me company once private certificate and have it signed please.
+
+04:07.100 --> 04:11.570
+No they have investigated and say OK you are actually company one.
+
+04:11.690 --> 04:15.540
+So we are going to sign this private key certificate to you.
+
+04:15.560 --> 04:26.650
+So when people are asking for the public key needed to decrypt this we can trust they can trust that
+
+04:26.980 --> 04:33.810
+we have dude done our background search so that we know that you are company one company.
+
+04:33.820 --> 04:44.860
+You can only decrypt the same value if it is coming from a valid signature that has been encrypted by
+
+04:44.860 --> 04:45.720
+the CIA.
+
+04:45.730 --> 04:47.830
+So this is how this go around.
+
+04:47.830 --> 04:53.940
+This is simply and made easy a model of this PCI.
+
+04:54.040 --> 04:56.020
+It can be much more advanced.
+
+04:56.020 --> 05:01.990
+You can have registration authorities as well and you can have multiple other parties and you can have
+
+05:01.990 --> 05:09.460
+a route of authority meaning that the CIA will have a route on its own set that you will trust on several
+
+05:11.890 --> 05:16.950
+intermediate certificates as well so you can have a real along change of certificate.
+
+05:17.170 --> 05:22.620
+But the important part is that the rude or the.
+
+05:22.790 --> 05:30.070
+Yeah the route authority is one that all the parties within this network is trusting because if they
+
+05:30.070 --> 05:39.040
+don't then this entire PGI setup has no value because if company one made some shady agreements with
+
+05:39.040 --> 05:45.910
+the CIA then company two could not be sure that whatever they received from company 1 were legit because
+
+05:45.910 --> 05:47.670
+these two had an agreement in between.
+
+05:47.670 --> 05:56.710
+So it needs to be a third party that is independent from the people using this signed value.
+
+05:56.800 --> 06:09.160
+And it also B has to be a third party that can be trusted to operate under the rules of this PCI setup.
+
+06:09.190 --> 06:17.650
+So I hope that this make made sense for the PTI if it didn't then please re watch this video and try
+
+06:17.650 --> 06:23.470
+to see if it makes sense or else go back and take the encryption lecture and the data hashing lecture
+
+06:23.770 --> 06:26.400
+and then end up with this PGI lecture.

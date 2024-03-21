@@ -1,0 +1,298 @@
+WEBVTT
+
+00:00.570 --> 00:06.480
+What Does DP and UDP keys are the most common protocols used when doing networking.
+
+00:06.690 --> 00:12.980
+So we have DCP which is transport layer protocol and we have UDP which is user data gram protocols and
+
+00:12.990 --> 00:20.490
+is it is a way of transferring information between computers and over networks and we have a graphical
+
+00:20.490 --> 00:22.620
+illustration of how they work right here.
+
+00:23.850 --> 00:31.260
+So with DCP we are when sending messages getting an acknowledgement of that message whereas in UDP we
+
+00:31.260 --> 00:36.180
+are just communicating one way we are just transferring a lot of data in one direction.
+
+00:36.180 --> 00:39.780
+So let's take a closer look at each of these.
+
+00:39.840 --> 00:46.860
+So in the TTP This is a connection oriented protocol and it is a one to one oriented protocol as well
+
+00:47.190 --> 00:52.470
+meaning that we cannot use it for broadcasting messages because we need to establish a connection between
+
+00:52.470 --> 00:55.680
+a client and a server in order for us to communicate.
+
+00:56.370 --> 01:02.070
+So TTP is initiating what is called freeway a handshake and that is illustrated in the picture right
+
+01:02.070 --> 01:03.120
+here.
+
+01:03.120 --> 01:05.970
+So for example if we have a client that want to talk to.
+
+01:05.990 --> 01:11.380
+So the first thing that the client is going to do is send the message to the server.
+
+01:11.790 --> 01:18.510
+Then the server is acknowledging that message saying that I received your message do you receive mine
+
+01:19.650 --> 01:24.290
+then the client say at the last part of this three way.
+
+01:24.630 --> 01:28.470
+Yes I received it and now the connection is established.
+
+01:28.470 --> 01:34.860
+The reason why we have this three way handshake is because let's take an example where we communicated
+
+01:34.860 --> 01:37.110
+to the server and our message got through.
+
+01:37.230 --> 01:43.820
+So we said hello server and also say oh yeah I got your message do you got mine.
+
+01:43.860 --> 01:49.920
+And then even though we got to the server there might be a firewall rule blocking this message from
+
+01:49.920 --> 01:53.500
+us getting back to us meaning that we don't get an acknowledgement.
+
+01:53.820 --> 02:00.750
+So in order to confirm that the server can talk to us and we can talk to the server we need this three
+
+02:00.750 --> 02:04.340
+way handshake before our connection is established.
+
+02:04.590 --> 02:11.420
+So what is the how is the packages that is going to be transferred or what is B.
+
+02:11.460 --> 02:12.970
+How does do they look like.
+
+02:12.990 --> 02:18.990
+So when we are communicating data or one network we are breaking our communication down to packages
+
+02:19.020 --> 02:24.840
+because we just can say here is 10 gigabyte of data and then just throw it at the server.
+
+02:24.870 --> 02:25.920
+That doesn't work like that.
+
+02:25.920 --> 02:30.240
+We need to divide them into smaller packages that we can then send.
+
+02:30.480 --> 02:37.620
+And if you haven't seen the first five years of this course then I recommend you to do so in order to
+
+02:37.620 --> 02:39.100
+understand some of these concepts.
+
+02:39.120 --> 02:46.960
+But when we are communicating data or one at work we have a stream of data which we can see right here.
+
+02:46.980 --> 02:50.490
+So take for example this messages message we have here.
+
+02:50.530 --> 02:57.240
+Love Academy if you like of videos Roma to subscribe this is let's say this is along major message.
+
+02:57.240 --> 03:03.090
+I know that it is quite short but doesn't mention that this is a very big message.
+
+03:03.090 --> 03:08.790
+So what we're going to do when communicating this for example to our friend over a network we're going
+
+03:08.790 --> 03:16.730
+to break this down into smaller packages and since this is TGP we need to have a header on our packages.
+
+03:16.740 --> 03:23.670
+We also have that with UDP but with TTP we need a 20 by the header and that is because when we are breaking
+
+03:24.050 --> 03:30.360
+down these messages as you see right here we are just breaking them down on random places.
+
+03:30.360 --> 03:32.930
+So for example this is one package.
+
+03:33.000 --> 03:34.440
+This is another package.
+
+03:34.440 --> 03:39.710
+And so on meaning that we have 80 base of body left to our data.
+
+03:40.320 --> 03:46.850
+So before our friend could understand what we are sending him we need to identify the pages.
+
+03:46.860 --> 03:54.810
+So in the header we are going to put port number the size of the package the signature and the number
+
+03:55.040 --> 03:58.110
+in the row in the line of pages that we have.
+
+03:58.110 --> 04:05.190
+So this is for example package 2 and this line of packages because in TTP we need to confirm that we
+
+04:05.190 --> 04:06.500
+have received the package.
+
+04:06.540 --> 04:12.390
+So the first thing that we are going to do is to send this first block would only have Vindaloo then
+
+04:12.720 --> 04:16.680
+our friend would say Oh yeah I got this package send me the next one and then we're going to send him
+
+04:16.760 --> 04:21.610
+off a cat and then send him that and so on.
+
+04:21.780 --> 04:28.950
+But imagine if one of these pages got lost then this message will be you couldn't read it because then
+
+04:29.010 --> 04:34.410
+he would just get a message of act and you were like What what does that mean.
+
+04:34.410 --> 04:40.540
+So that is why we need to say that we need this acknowledgement of pages and we need the number on or
+
+04:40.540 --> 04:46.380
+off because then he can say OK I got a package one and then suddenly wait now I've got page three I
+
+04:46.380 --> 04:47.640
+must be missing package too.
+
+04:47.670 --> 04:51.280
+So he say can you send me a package to again and we will send him package to again.
+
+04:51.540 --> 05:00.750
+And then once all packages is sent then our friend will break these down and reassemble them so that
+
+05:00.750 --> 05:02.130
+he can read the message.
+
+05:02.130 --> 05:04.860
+So this is basically how she's P works.
+
+05:04.860 --> 05:12.720
+And since we numbering D Peg these packages we can break our data up any places we don't need to say
+
+05:12.720 --> 05:19.320
+that it has to be an entire word because he will know what all to read them and if you are missing he
+
+05:19.340 --> 05:19.890
+is missing one.
+
+05:19.890 --> 05:21.560
+He would just ask for it.
+
+05:21.870 --> 05:28.340
+So UDP this is a different protocol compared to what we have just discussed.
+
+05:28.410 --> 05:34.500
+So UDP is to use a data ground protocol and we do not have to verify that we have a connection and there
+
+05:34.500 --> 05:40.440
+is no three way handshake in this protocol and we are not limited to one to one communication meaning
+
+05:40.440 --> 05:42.840
+that we can use it to broadcast messages.
+
+05:42.840 --> 05:47.940
+And as you see on this picture right here our computer client is housing.
+
+05:47.940 --> 05:51.330
+Are you getting the messages and our friend is just saying I don't care.
+
+05:51.330 --> 05:51.920
+Just send it.
+
+05:51.930 --> 05:55.280
+Meaning that just just give me the data and just push it.
+
+05:55.320 --> 06:00.500
+I don't care if I miss a package or something and corrupt or whatever I get I'm just.
+
+06:00.500 --> 06:04.010
+Just throw them at me because I need them fast.
+
+06:04.260 --> 06:06.230
+So how does that work.
+
+06:06.240 --> 06:14.070
+When we look at packages and as we saw before we divided our packages into equal sized packages mean
+
+06:14.070 --> 06:19.950
+that these are all equal size because we can use the max length of a package because we don't need to
+
+06:20.280 --> 06:25.140
+carry about care about the meaning of the words but in UDP we actually does.
+
+06:25.170 --> 06:30.650
+Because if you're missing a package then we can't let him have a half word.
+
+06:30.660 --> 06:32.580
+We need the entire.
+
+06:32.580 --> 06:36.990
+We may need to break the message and data and words make logical sense.
+
+06:36.990 --> 06:42.800
+So for example here we are having the first packages with just the word hey and then the next one is.
+
+06:42.960 --> 06:44.660
+It's not too late to subscribe.
+
+06:44.660 --> 06:45.150
+We need that.
+
+06:45.150 --> 06:50.550
+You could still make sense of this word and this sentence even if one of them is lost.
+
+06:51.960 --> 06:55.730
+So that is basically the main difference between CCP and UDP.
+
+06:55.920 --> 07:01.920
+And since we are not getting all this information about the number of the pages and so on we can have
+
+07:01.920 --> 07:09.390
+a much smaller header but we cannot utilize a max max length of the data packages because we need to
+
+07:09.630 --> 07:16.350
+make these logical splits and that this makes our packages in different sizes.
+
+07:16.350 --> 07:22.680
+So where are the TTP and UDP used for example when you're transferring a file over a network you're
+
+07:22.680 --> 07:30.330
+using TTP because you need to be sure that the entire file is getting transferred but UDP on the other
+
+07:30.330 --> 07:34.530
+hand is for example use when you're streaming online.
+
+07:34.680 --> 07:39.470
+When you have these streaming services which for example YouTube that you're watching now provide for
+
+07:39.470 --> 07:47.190
+K views then it doesn't matter if one package get lost or something because the quality will just have
+
+07:47.190 --> 07:54.090
+a quick drop and then go up again because you can't be waiting for your server and clan to communicate
+
+07:54.090 --> 07:55.560
+say hey you got this package.
+
+07:55.570 --> 08:01.050
+Yes send me the next one OK to got this one year I got this one when streaming you just need the data
+
+08:01.080 --> 08:08.400
+as fast as possible to keep up the quality and to be able to view it without liking and having the browser
+
+08:08.610 --> 08:09.600
+just spinning and waiting.

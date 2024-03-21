@@ -1,0 +1,85 @@
+WEBVTT
+
+00:00.120 --> 00:04.080
+So now we have installed where shock.
+
+00:04.140 --> 00:07.020
+It's time to see some network traffic.
+
+00:07.020 --> 00:10.050
+So you should be able to see your network interfaces right here.
+
+00:10.110 --> 00:17.320
+If you do not see these then you might not install the wooden cap in the installation wizard.
+
+00:17.370 --> 00:20.670
+And you should try to reinstall it and be sure that you have this.
+
+00:20.670 --> 00:28.020
+So once you have this install and you could see your interfaces then you can click on the one where
+
+00:28.020 --> 00:29.860
+you want to capture packages.
+
+00:30.000 --> 00:32.190
+So as you heard some traffic.
+
+00:32.190 --> 00:41.760
+So if I go to this and type YouTube and just see a random clip right here you see photo Dean with new
+
+00:41.760 --> 00:46.650
+Samsung Galaxy S4 was designed for six million young going.
+
+00:46.920 --> 00:54.540
+Welcome back to some professional Starcraft 2 from Dublin to see us bring me 20 19 an astounding idea.
+
+00:54.670 --> 01:01.180
+These wrapping my arms and two names you should know this not only from YouTube but you an old network
+
+01:01.220 --> 01:07.660
+traffic in the bottom right on this German is also nicknamed click pause on this.
+
+01:07.980 --> 01:10.280
+Then let's see.
+
+01:10.380 --> 01:15.870
+And here we can see the protocol used for the communication.
+
+01:15.870 --> 01:19.290
+So if you use this.
+
+01:19.520 --> 01:22.490
+So now we can actually see the source where this came from.
+
+01:22.490 --> 01:28.210
+We can see the destination and we can see the protocol and we can see some info about it.
+
+01:28.400 --> 01:36.590
+And as you see there came a lot of traffic when I opened this video because when I'm streaming this
+
+01:36.860 --> 01:44.300
+I'm just getting hit with pages and as you see right here we have a lot of UDP packages which is when
+
+01:44.300 --> 01:48.180
+I clicked on the YouTube video.
+
+01:48.230 --> 01:54.890
+So now did you try this on you tried to navigate a bit around the web and then see what kind of information
+
+01:54.890 --> 01:55.310
+you can.
+
+01:56.360 --> 02:01.390
+I can see if you are looking into our website which is not secure.
+
+02:01.400 --> 02:08.990
+That should not be anyone but if you try to go into a website and then into credentials you might be
+
+02:08.990 --> 02:14.030
+able to actually see if they are not using his piece which we'll learn on the day in the encryption
+
+02:14.450 --> 02:20.530
+lecture you might be able to see your exact credentials in this information right here.
+
+02:20.630 --> 02:24.800
+So try to play around with your wife there and then I will see you in the next lecture.

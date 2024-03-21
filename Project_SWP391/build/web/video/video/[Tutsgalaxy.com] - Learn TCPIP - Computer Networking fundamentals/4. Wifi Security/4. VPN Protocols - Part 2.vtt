@@ -1,0 +1,202 @@
+WEBVTT
+
+00:00.420 --> 00:03.770
+So let's see what this IP sic is.
+
+00:03.790 --> 00:14.730
+IP 16 for IP security and it encrypts data at least tree meaning the IP layer and then we have underneath
+
+00:14.820 --> 00:22.620
+IP tech we have four sub protocols because IP sic uses these sub protocols to perform its task.
+
+00:22.620 --> 00:26.270
+We will in the next life see a graphical illustration of how this works.
+
+00:26.300 --> 00:27.960
+But first we will go through them.
+
+00:28.230 --> 00:33.220
+So the first protocol we have is ISP encapsulation security payload.
+
+00:33.240 --> 00:40.620
+This is the protocol that encrypts the content meaning the data that we have with a symmetric algorithm.
+
+00:40.620 --> 00:46.680
+This means that both the client and the server will have the same algorithm so that what is used to
+
+00:46.680 --> 00:53.200
+encrypt the data can also be used to decrypt the data because you cannot just encrypted on your side.
+
+00:53.220 --> 00:59.340
+And then just hope that the server somehow managed to figure out what whatever you encrypted it with
+
+00:59.460 --> 01:04.900
+the need to be a correlation between them and you need to exchange some information for this to work.
+
+01:05.070 --> 01:07.120
+But USP is the encryption part.
+
+01:07.170 --> 01:08.920
+Then we have HP.
+
+01:08.940 --> 01:16.170
+Often the case in header this is a header that is added on to our data package which have a checksum
+
+01:16.710 --> 01:17.240
+in it.
+
+01:17.310 --> 01:26.160
+In order for our server or ourself when receiving RECEIVING PACKAGES again to check up and secure that
+
+01:26.160 --> 01:31.770
+no one have tamper with this data because if they have then the checksum and the hash of this of indication
+
+01:31.770 --> 01:33.630
+header will simply not match.
+
+01:33.630 --> 01:41.400
+And we know that someone has been trying to manipulate this data and we either know that our encryption
+
+01:41.640 --> 01:49.020
+or private network has been broken or some something has gone run wrong to do away from our point A
+
+01:49.020 --> 01:50.190
+to Point B.
+
+01:50.610 --> 01:54.490
+Then we have the IP come which is the IP payload compression.
+
+01:54.660 --> 02:01.340
+This is where our payload meaning our data and our authentication header is getting compressed Saturdays.
+
+02:01.560 --> 02:10.290
+It is of a smaller size before we send it because the less data size that we have the faster it is and
+
+02:10.290 --> 02:11.940
+the less bandwidth we use.
+
+02:11.940 --> 02:17.400
+So it is very important that we can compress it as much as possible before we actually send it.
+
+02:17.640 --> 02:23.610
+And then we have the last protocol which is the IEEE Internet key exchange and that is the protocol
+
+02:23.640 --> 02:27.690
+that negotiate this shared secret between us and the receiver.
+
+02:28.170 --> 02:36.330
+So as I said in the ISP the encapsulating security payload we need to negotiate some she had secret
+
+02:36.360 --> 02:42.410
+in order for us to be able to encrypted in one end and for the receiver to decrypt the other.
+
+02:42.450 --> 02:45.620
+So we need to have some common knowledge in order for this to work.
+
+02:45.630 --> 02:49.380
+So this is basically the force of protocol to IP sic users.
+
+02:50.340 --> 02:52.330
+So let's see how this works.
+
+02:52.350 --> 02:59.340
+So the first thing that we have is the part one we need to negotiate a shared secret or key before we
+
+02:59.340 --> 03:05.490
+can start doing this so that we have an understanding of what it is used to encrypt and what is needed
+
+03:05.490 --> 03:10.650
+to decrypt once that is in place we can encrypt the data with ISP.
+
+03:10.770 --> 03:14.320
+So for example we have a package right here with the black square.
+
+03:14.730 --> 03:19.500
+We have data then we will encrypted with this green layer right here.
+
+03:19.500 --> 03:23.220
+So now this entire data block is encrypted in the next part.
+
+03:23.220 --> 03:25.070
+We will at this of indication here.
+
+03:25.100 --> 03:32.310
+So we will add it to the data package which is encrypted and therefore we will add a new encrypted layer
+
+03:32.400 --> 03:39.360
+around this entire package to around the header and around the data because then the header is encrypted
+
+03:39.360 --> 03:39.860
+as well.
+
+03:39.960 --> 03:46.860
+And then there will be a minor header to this encrypted package with the receivers information because
+
+03:46.860 --> 03:50.210
+we need to detail where this is to be sent to.
+
+03:50.220 --> 03:56.310
+So this is when we are encrypting our data on one end and then the receiver is getting the package the
+
+03:56.310 --> 04:00.170
+first thing that he is going to do is remove the other encryption layer.
+
+04:00.210 --> 04:02.910
+So he removed this blue box right here.
+
+04:03.030 --> 04:08.580
+Then he will check the header see if everything is in order has the data been timber red.
+
+04:08.790 --> 04:10.110
+And then it will be removed.
+
+04:10.110 --> 04:15.350
+So we would take out the header and then at last he will decrypt the data.
+
+04:15.390 --> 04:21.060
+So he will encrypt the screen box right here and remove it and then he is capable of reading the exact
+
+04:21.060 --> 04:25.590
+same data that we started off by sending right here.
+
+04:25.590 --> 04:32.460
+So this is basically how VPN protocols and the different set protocols is used to do this entire virtual
+
+04:32.460 --> 04:35.200
+private work over a public network.
+
+04:35.400 --> 04:41.080
+But we need one more protocol and that is the ISC KMP protocol.
+
+04:41.100 --> 04:44.610
+So the Internet Security Association and key management protocol.
+
+04:44.610 --> 04:46.030
+It's a very long name.
+
+04:46.260 --> 04:52.620
+And if you're really into this VPN stuff and you need to go beyond the basic which is this is all about
+
+04:52.890 --> 04:59.520
+then I highly recommend you to do some reading of the details of these different protocols because there's
+
+04:59.640 --> 05:03.820
+a lot of more into them than just what I have listed right here.
+
+05:03.890 --> 05:05.450
+But this is the basics.
+
+05:05.750 --> 05:09.810
+So this protocol is actually used to establish the tunnel.
+
+05:10.100 --> 05:18.470
+And that is what do this that exchange of keys and provide the tools needed for us to have this tunnel
+
+05:18.530 --> 05:26.000
+before we can start to use their L2 GP protocol and IP sic on top of that.
+
+05:26.000 --> 05:32.270
+So this is basically how VPN from client to server over our public network works and how it is getting
+
+05:32.270 --> 05:35.150
+encrypted using several sub protocols.

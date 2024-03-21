@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.360 --> 00:02.130
+What is CCP IP.
+
+00:02.130 --> 00:06.450
+Well this is a sort of protocol that is used on the Internet to communicate.
+
+00:06.570 --> 00:12.150
+Meaning that when we accumulating with other devices using the Internet or given that we're going in
+
+00:12.160 --> 00:16.800
+jail we are using this CCP IP protocol suit.
+
+00:16.800 --> 00:23.820
+So this is a common language that devices have implemented such that they can talk to each other because
+
+00:23.850 --> 00:29.490
+if we didn't have these common protocols then two devices did not know how to communicate with each
+
+00:29.490 --> 00:35.100
+other because you just can't take a cable cable and connect to devices and then expect them to figure
+
+00:35.130 --> 00:37.110
+this out on their own.
+
+00:37.110 --> 00:42.820
+They need some basic language that they both understand in order to communicate similar to.
+
+00:43.140 --> 00:50.610
+As humans we need to have a language that the two of us understand in order to understand what the other
+
+00:50.610 --> 00:52.020
+one is saying.
+
+00:52.080 --> 00:59.580
+So the first one TPP which is Transmission Control Protocol this is one of the protocols.
+
+00:59.590 --> 01:03.230
+There is also UDP which you're going to discuss later.
+
+01:03.450 --> 01:11.310
+But for CCP it is a very fine delivery to endpoint protocol meaning that as we see on the picture right
+
+01:11.310 --> 01:19.920
+here when to a device like communicating Herod's pub using his computer and Ellis using her computer
+
+01:20.460 --> 01:23.500
+then when they are communicating with each other.
+
+01:23.580 --> 01:28.450
+Bob is first sending a request or some kind of package to Alice.
+
+01:28.620 --> 01:35.110
+Then Alice acknowledge this and that is where CCP differentiated so from UDP because every time I pay
+
+01:35.110 --> 01:45.220
+to send the receiving part is acknowledging the sending request and then the flow continues.
+
+01:45.220 --> 01:53.410
+Where we send something and we get an acknowledgment back and this CCP protocol is used within for example
+
+01:53.680 --> 01:55.660
+puppetry and hates.
+
+01:55.890 --> 02:04.120
+So these are some protocols that uses the CCP protocol to work online.
+
+02:04.150 --> 02:11.320
+We will see a map in a few slides so that you can get a bigger understanding of how all this is connected.
+
+02:11.320 --> 02:14.830
+But first the IP internet protocol.
+
+02:14.890 --> 02:21.690
+This is the protocol says allow us to go one step above the MAC addresses which we discussed in previous
+
+02:21.690 --> 02:22.380
+lectures.
+
+02:22.510 --> 02:30.460
+MAC addresses is used in for example and hubs when you connect devices then they use their MAC address
+
+02:30.560 --> 02:33.470
+to Ms.
+
+02:34.760 --> 02:37.110
+Remember who is sending what and to who.
+
+02:37.190 --> 02:44.930
+Because without IP IP addresses we can only rely on these MAC addresses since they are hardcoded into
+
+02:44.930 --> 02:46.590
+our network interface cut.
+
+02:46.760 --> 02:50.100
+But this will only work on our logical network.
+
+02:50.210 --> 02:55.400
+But as soon as we go beyond our logical network meaning that we are communicating through the router
+
+02:56.270 --> 03:02.900
+out to the global net we need the IP protocol because then we need to have a piece in place in order
+
+03:02.900 --> 03:07.970
+to understand what device we are going to speak to and what route we need to take in order to get to
+
+03:07.970 --> 03:09.530
+that device.
+
+03:09.530 --> 03:22.460
+So that is basically what the IP protocol does and if we see on this picture we have a more basic overview
+
+03:22.460 --> 03:23.950
+of some of these protocols.
+
+03:23.960 --> 03:29.350
+So as you see right here we have the all say layers which we discussed and lecture one.
+
+03:29.390 --> 03:34.590
+So we have our application layer at the top and then we have our data link layer.
+
+03:34.640 --> 03:40.010
+And this is supposed to be a two but you hopefully understand that.
+
+03:40.550 --> 03:49.040
+So as you see we have the CCP on our Layer 4 and we have the IP on only a tree.
+
+03:49.040 --> 03:57.830
+This basically means that DP uses the IP protocol from the tree to do some other protocols for example
+
+03:57.830 --> 04:04.590
+it is used by DNS and puppetry and HP and so on.
+
+04:04.640 --> 04:06.110
+These are just sort of protocols.
+
+04:06.110 --> 04:07.120
+There are many more.
+
+04:07.220 --> 04:11.820
+You can feel free to look them up yourself in order to get a full list of all the protocols.
+
+04:11.960 --> 04:21.170
+And then we also have UDP which also relies on IP but as I mentioned whereas CCP uses acknowledgment
+
+04:21.320 --> 04:22.640
+on transfer.
+
+04:22.640 --> 04:29.600
+This one just pump out messages and messages and don't need any confirmation that such a package has
+
+04:29.600 --> 04:30.800
+been delivered.
+
+04:30.800 --> 04:40.300
+And this is used on our t DTP servers so this is a little overview of how these different protocols
+
+04:41.170 --> 04:45.610
+are connected and how they are laid out in the USA model.
+
+04:45.610 --> 04:52.420
+So some of the protocols that you just saw on this map where for example the IP address resolution protocol
+
+04:52.690 --> 05:00.370
+which is this one right here on our data link layer layer to remember this and that is basically used
+
+05:00.370 --> 05:03.170
+to map the eyepiece to make addresses.
+
+05:03.340 --> 05:13.530
+Then we have the TTP UDP here as we discussed where our CCP confirmed delivery and UDP just keep delivering
+
+05:13.530 --> 05:14.430
+without a receipt.
+
+05:14.430 --> 05:22.650
+Then we have the DNS which anyone using the web and who has been surfing the Web have been in contact
+
+05:22.650 --> 05:30.600
+with because genius is basically what helps us resolve the endpoints and domains that we type in for
+
+05:30.600 --> 05:39.300
+example the visual that Google dot com gets translated into our IP address in order for the computer
+
+05:39.300 --> 05:41.180
+to understand what exactly we are doing.
+
+05:41.190 --> 05:44.930
+So that is why DNS is very important when we are using the Web.
+
+05:45.510 --> 05:54.000
+And then we have the DCP right here which is basically the protocol server who hands out a piece on
+
+05:54.000 --> 05:54.850
+a local network.
+
+05:55.740 --> 06:03.540
+So when a computer connects to the network this part will take care of handing out eyepiece so that
+
+06:03.540 --> 06:06.970
+we can have more than just our mega addresses.
+
+06:07.050 --> 06:12.530
+So this was shown on Russian to me as a TTP and IP.
+
+06:12.540 --> 06:19.650
+We are now going to go a lot more in depth with these protocols especially DCP and UDP and what differentiate
+
+06:19.770 --> 06:25.170
+them and what the benefits are of using one above the other in certain context.

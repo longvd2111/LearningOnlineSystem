@@ -1,0 +1,133 @@
+WEBVTT
+
+00:00.240 --> 00:05.430
+Where we else use this hashing is in the public key infrastructure because we can use it.
+
+00:05.460 --> 00:11.370
+As mentioned before for fire validation and also when we have public key and private keys to ensure
+
+00:11.370 --> 00:18.750
+that the content that we are receiving are actually from the person that we expecting it from.
+
+00:18.750 --> 00:21.830
+So for example we have right here designing part.
+
+00:21.870 --> 00:23.440
+So this will be the sender.
+
+00:23.460 --> 00:26.710
+He has some data he wants to send from A to B.
+
+00:26.820 --> 00:33.180
+So in order for B to check and ensure that it is a sending it what our part is doing in the signing
+
+00:33.190 --> 00:38.370
+process is does he take his data run it through a hashing function.
+
+00:38.370 --> 00:41.160
+Then he will get a host value.
+
+00:41.160 --> 00:46.170
+Then he will take this and encrypt the has value with his private key.
+
+00:46.230 --> 00:55.980
+Then he will have the certificate plus the asset signed has value which is now encrypted and the data
+
+00:56.370 --> 00:57.640
+is encrypted as well.
+
+00:57.780 --> 01:05.490
+But the nice part about this if you remember public private key is that when we encrypted data we can
+
+01:05.490 --> 01:07.500
+use these public key.
+
+01:07.510 --> 01:12.940
+So again if you haven't watched the previous lecture then please do so to fully understand the public
+
+01:12.950 --> 01:15.540
+private private key infrastructure.
+
+01:15.630 --> 01:22.290
+But when encrypting the data we will use piece public key because when using his public heath and we
+
+01:22.290 --> 01:29.850
+know that only his private key can unencrypted but since it is his public key that we use for encrypting
+
+01:29.850 --> 01:34.240
+the data everybody everyone else who has this public key can also use this.
+
+01:34.320 --> 01:40.620
+And then he can't really tell if it was us or someone else who used his public key to encrypted but
+
+01:41.010 --> 01:49.620
+we can then use our own private key to encrypt this test value of the data because our private key has
+
+01:49.620 --> 01:58.860
+a a lesion a corresponding public key and B can then use our public key to encrypt our has value so
+
+01:58.860 --> 02:01.200
+he can check there has value is coming from us.
+
+02:01.500 --> 02:07.380
+And when he use his own private key to encrypt the data that we encrypted using his public key he can
+
+02:07.380 --> 02:12.840
+then run through a hashing algorithm and he can see whether these two values matches.
+
+02:12.840 --> 02:14.280
+So this is what we see in this picture.
+
+02:14.280 --> 02:21.310
+So first we take a hash of the data then we use the public key of B to encrypted.
+
+02:21.540 --> 02:28.500
+Then we use our own private key to encrypt our highest signal to value we add that to the entire data
+
+02:28.500 --> 02:29.820
+package.
+
+02:29.820 --> 02:33.990
+What he is doing to verify that it is us who has sent the package is he.
+
+02:34.230 --> 02:40.110
+He divided meaning that he will split the data and it has value.
+
+02:40.110 --> 02:45.420
+Then he will use our public key to decrypt our has value.
+
+02:45.420 --> 02:49.560
+Then he will use his own private key to decrypt the data.
+
+02:49.560 --> 02:55.230
+Then he will take the hash of the data he received and compared with the Hastert we sent him.
+
+02:55.230 --> 03:02.330
+And if these two match then he knows that this file were actually from us and not from someone else.
+
+03:02.340 --> 03:10.200
+So now let's see where you can generate hash on your own on the web so there are actually multiple places
+
+03:10.200 --> 03:14.190
+you can do this this is just a symbol one where you have different algorithms to play with.
+
+03:14.220 --> 03:16.560
+So as we see right here we can choose our room.
+
+03:16.560 --> 03:28.230
+So let's take share one and then we can write a message remember to like and so scribe to channel then
+
+03:28.230 --> 03:35.120
+we can Hester's Nancy she here we have has value using this sheikh one emblem.
+
+03:35.220 --> 03:42.000
+And if I changed a single bit in this example just to a and we do the Hash again this will be completely
+
+03:42.000 --> 03:43.830
+different.
+
+03:43.900 --> 03:50.870
+And as you see it is a total different it has value we have and this is really how you can try to play
+
+03:50.870 --> 03:53.570
+along with this and tested on your own.

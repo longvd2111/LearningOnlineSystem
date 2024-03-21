@@ -1,0 +1,148 @@
+WEBVTT
+
+00:00.420 --> 00:02.920
+First of all what is encryption.
+
+00:02.970 --> 00:08.640
+Encryption is when we start off with something in clear takes mean that's something that we as humans
+
+00:08.640 --> 00:09.570
+can read.
+
+00:09.570 --> 00:19.520
+For example text in the document are something that we have entered on a forum on the web page and then
+
+00:19.530 --> 00:26.780
+we want to encrypted so that it is only us and the receiver that is capable of reading this message.
+
+00:27.120 --> 00:33.470
+Because if we didn't encrypted then anywhere anybody else could basically read this and we don't want
+
+00:33.470 --> 00:41.310
+it especially for sensitive and private information such as password or bank details or personal information
+
+00:41.310 --> 00:43.440
+lag insurers no reason and stuff like that.
+
+00:44.400 --> 00:52.440
+So encryption is basically all around around taking something from clear text and me into a sever text
+
+00:54.470 --> 01:01.550
+so encryption and decryption all comes down to mathematical algorithms where mathematicians has been
+
+01:01.550 --> 01:07.050
+spending years on developing these algorithms because we need to know that these are secure.
+
+01:07.130 --> 01:14.270
+So we need to have a lot of mathematicians trying to break the code of this algorithm in order for us
+
+01:14.270 --> 01:17.290
+to know that well this is basically very secure.
+
+01:17.330 --> 01:23.570
+So what is changing in encryption is normally the key or the passphrase meaning the Secret which we
+
+01:23.570 --> 01:25.590
+talked about in lecture 11.
+
+01:26.120 --> 01:28.970
+Whereas the algorithm stays the same.
+
+01:28.970 --> 01:35.270
+So the algorithm that you are using to encrypt and decrypt are probably also used by a lot of other
+
+01:35.270 --> 01:41.390
+people in the world especially when it comes to networking because the algorithm on its own is secure
+
+01:41.450 --> 01:47.060
+but it is the key and the passphrase that make us encrypt and decode and ensure that it is only us who
+
+01:47.060 --> 01:49.100
+can do this decrypting.
+
+01:49.100 --> 01:53.440
+So a little example of how encryption works.
+
+01:53.450 --> 01:58.010
+Take for example this clear text we have right here we have Vince love.
+
+01:58.010 --> 02:00.940
+Then we take this clear text which is our data.
+
+02:01.040 --> 02:03.050
+Then we take our algorithm.
+
+02:03.050 --> 02:09.430
+This is a very basic algorithm so we simply just say plus K mean that we will take each letter.
+
+02:09.590 --> 02:11.720
+And plus it would K meaning a number.
+
+02:12.290 --> 02:15.750
+So our number in this case is 1.
+
+02:15.770 --> 02:20.390
+So this one plus K is known to the entire world.
+
+02:20.390 --> 02:23.150
+So everybody knows this algorithm plus key.
+
+02:23.720 --> 02:29.810
+It is a very basic one so you should never use it but everyone knows this algorithm the secret that
+
+02:29.930 --> 02:32.530
+nobody should know is what the number is.
+
+02:32.570 --> 02:38.480
+Because if they have the same number they can actually decrypt the message again because then they know
+
+02:38.480 --> 02:45.050
+how we encrypted so we'll be encrypting this using the Plus key algorithm and they're using our secret
+
+02:45.050 --> 02:46.600
+number is 1.
+
+02:46.640 --> 02:51.890
+So we take each letter and incremented by 1 meaning that we get this ciphertext right here.
+
+02:51.890 --> 02:56.510
+So this is encrypted text you can read the letters but they mean nothing to you.
+
+02:56.510 --> 03:00.470
+And you can get the original message out of this garbage.
+
+03:00.470 --> 03:09.740
+So we have now encrypted this critics right here using our little algorithm and a secret phrase which
+
+03:09.740 --> 03:18.680
+is our number one in real algorithms as we will see and Little League has is much more complex and is
+
+03:19.250 --> 03:23.000
+much more secure meaning that you just can't break them by just trying.
+
+03:23.000 --> 03:23.560
+OK.
+
+03:23.570 --> 03:24.950
+Has he incremented with one.
+
+03:24.980 --> 03:25.390
+No.
+
+03:25.400 --> 03:26.370
+2 No.
+
+03:26.450 --> 03:28.340
+It is much more advanced than that.
+
+03:28.610 --> 03:32.720
+But this stands as a good example to understand how this works.
+
+03:32.780 --> 03:36.270
+So what you need to keep in mind when encrypting is that we have some data.
+
+03:36.410 --> 03:38.110
+We have a given encryption algorithm.
+
+03:38.300 --> 03:40.940
+And then we have a secret key or passphrase that we use.

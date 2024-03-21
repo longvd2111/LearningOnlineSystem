@@ -1,0 +1,178 @@
+WEBVTT
+
+00:00.270 --> 00:07.860
+What is often the occasion of an occasion when it comes to networking is a very important aspects because
+
+00:08.400 --> 00:12.000
+when we are using often the occasion we are actually improving who we are.
+
+00:12.150 --> 00:18.840
+So we are using over the Haitian whenever we are looking into something or whenever we are encrypting
+
+00:18.840 --> 00:26.610
+some data because we need Indian to prove that we are who we say we are and we can't just tell a computer
+
+00:27.030 --> 00:27.670
+that will.
+
+00:27.670 --> 00:32.230
+I am the administrator and then the computer will ask Are you really the administrator and then we will
+
+00:32.230 --> 00:33.540
+just say yes I am.
+
+00:33.540 --> 00:35.790
+And they will just say OK fine I believe you.
+
+00:35.790 --> 00:43.440
+We need some solid methods that allow us to authenticate and these need to be bulletproof so that the
+
+00:43.650 --> 00:51.300
+wrong users can exploit them and exploit the fact that they are not administrators and get access to
+
+00:51.300 --> 00:53.340
+something that they are not supposed to.
+
+00:53.580 --> 01:00.760
+So when talking about vindication there is a word that is especially important and that is the known
+
+01:00.770 --> 01:07.560
+reputation and we will getting closer to that in the coming lectures where we are starting to dive into
+
+01:07.890 --> 01:15.500
+encryption certificates and the more technical stuff of how often the case is actually used in networking.
+
+01:15.500 --> 01:20.460
+We have touched a little upon it in the previous lectures where we briefly have mentioned it from time
+
+01:20.460 --> 01:26.790
+to time where our indication is used and how it plays along and this entailed working.
+
+01:27.690 --> 01:34.900
+But when talking about authentication it's important to understand the different often case methods
+
+01:34.920 --> 01:42.520
+that we have and we actually have three factors of how often location known at the present time.
+
+01:42.600 --> 01:48.020
+So we have something that you have something you are and something you know.
+
+01:48.150 --> 01:52.710
+These are three basic ways that you can authenticate to anything.
+
+01:52.710 --> 01:59.370
+This does not only applies to networking but in general there are these three areas and whatever else
+
+01:59.400 --> 02:06.970
+you can try to imagine you can some how also fit them into these three main boxes.
+
+02:07.530 --> 02:14.790
+So something you have that is for example an I.D. card or a physical token that you need to present
+
+02:14.850 --> 02:17.520
+to get access to something and something
+
+02:20.350 --> 02:33.500
+you are is for example fingerprints and eye scanner are something that is uniquely to you as a person.
+
+02:34.030 --> 02:40.540
+And then we have something you know which is our usernames and our passwords.
+
+02:40.780 --> 02:45.160
+The one often the case in fact that is most known to all of us.
+
+02:45.160 --> 02:50.890
+Is this something you know because password and username has been around for many years and that has
+
+02:50.890 --> 02:54.100
+been the main way that we often indicated something.
+
+02:54.190 --> 02:59.960
+But we are now starting to see a shift where a lot of services is implementing what is called multi
+
+02:59.960 --> 03:01.370
+factor authentication.
+
+03:01.540 --> 03:08.710
+And when we are talking about multi fact authentication it basically come down to us using two of these
+
+03:08.710 --> 03:10.920
+authentication factors instead of one.
+
+03:10.930 --> 03:15.070
+So whenever you're using two of these you are having multi effect of indication.
+
+03:15.160 --> 03:20.770
+For example you can have something you know you use name and password that is one and then you need
+
+03:20.770 --> 03:26.530
+something else in a multiple factor for example something you have and that is for example your mobile
+
+03:26.530 --> 03:28.110
+phone you have your mobile phone.
+
+03:28.120 --> 03:34.300
+So the service will also send a code to your phone number and you will not need that code alongside
+
+03:34.300 --> 03:39.490
+your password and username or it could be when you are entering a building.
+
+03:39.490 --> 03:44.560
+It could be something you know again a password and something you are your fingerprint in order to get
+
+03:44.560 --> 03:45.340
+access.
+
+03:45.340 --> 03:51.640
+So these are the three factor of indication that we currently have.
+
+03:51.640 --> 04:01.990
+So when we are talking about Web services especially the way that web services and Web pages or networks
+
+04:01.990 --> 04:08.620
+have evolved in the last decade we are starting to see what is called is a so which is singles sign
+
+04:08.620 --> 04:15.400
+on it that is especially used if you have played around with Google Apps once you have a Google account
+
+04:15.490 --> 04:21.540
+and you are locked into a Google account you basically have access to the Google obviously suite.
+
+04:21.670 --> 04:28.480
+Google Drive you have YouTube access you have access to Google Analytics are and all the different applications
+
+04:28.480 --> 04:29.640
+that Google use.
+
+04:29.950 --> 04:35.170
+And what is basically happening when you are off indication of indicating to this is that you lock in
+
+04:35.170 --> 04:44.830
+once and then the service is handling their information transfer meaning that they will be sure to prove
+
+04:44.830 --> 04:50.470
+that you have the right to enter a particular site based on what you have entered once and is actually
+
+04:50.470 --> 04:57.250
+a pretty smart way of doing a vindication because then you are not exposing your password several times
+
+04:57.280 --> 05:03.550
+and you are not having the risk of someone getting access to that password each time you're logging
+
+05:03.550 --> 05:05.480
+in because you only do that once.
+
+05:05.500 --> 05:11.050
+The only downside of this is that you have to trust a server that you're doing this with because then
+
+05:11.440 --> 05:18.220
+the Security entirely is up to them and if they can't keep your password safe when doing this transfer
+
+05:18.220 --> 05:27.400
+between apps then yes you are basically out of Logan and your password can be exposed but these are
+
+05:27.400 --> 05:33.940
+the basics of authentication and it is very important that you get familiar with these three of any
+
+05:33.940 --> 05:39.220
+case in fact us because these are the ones that we are going to talk about and the common lectures.

@@ -1,0 +1,250 @@
+WEBVTT
+
+00:00.210 --> 00:02.090
+So what is the illness.
+
+00:02.100 --> 00:10.610
+Well giddiness is the part of our network set up their resolve our domain and yours into actual eyepiece.
+
+00:10.710 --> 00:16.680
+So what it actually does is to resolve what is called fully qualified domain names and a fully qualified
+
+00:16.680 --> 00:24.420
+domain name is for example as we see here those older the Google dot com where we have Google as the
+
+00:24.420 --> 00:30.900
+name of this particular server and then we have the root domain which is the dot com.
+
+00:30.900 --> 00:39.420
+So what our Dennis is doing is to translate this into an IP because there is no actual server which
+
+00:39.420 --> 00:43.360
+has this as its address underneath the name.
+
+00:43.440 --> 00:50.940
+It has an IP because our computer speaks in numbers so it has to resolve it into something that you
+
+00:50.940 --> 00:51.830
+can understand.
+
+00:51.930 --> 00:57.270
+The reason why we are translating from for example Google that come into numbers is because numbers
+
+00:57.360 --> 01:05.040
+is a lower layer and that is a lot easier to translate into binary whereas binary is again easier to
+
+01:05.040 --> 01:10.520
+translate into electrical impulses because that is basically what is happening when we are networking
+
+01:10.920 --> 01:15.740
+that is electric in poses that is getting transferred over our wire.
+
+01:16.170 --> 01:23.880
+So in order to make that this entire networking easier for us humans we will not be using electric impulses
+
+01:23.910 --> 01:29.310
+and binary or eyepiece because that is simply too hard to remember.
+
+01:29.460 --> 01:36.300
+Try to just imagine how many eyepiece you should remember on a daily basis just to visit the 10 most
+
+01:37.080 --> 01:40.110
+favorite sites that you are visiting daily.
+
+01:40.110 --> 01:42.180
+There will be near impossible.
+
+01:42.180 --> 01:48.810
+So it is much easier for a human to remember names than we can use to navigate around the net.
+
+01:48.960 --> 01:55.530
+So there is the reason why we have our DNS because that will keep a table and keep track of what domain
+
+01:55.530 --> 01:59.850
+names resolves into what IP says that we can navigate around the web.
+
+02:00.030 --> 02:02.030
+But not all domain.
+
+02:02.310 --> 02:08.220
+Not all DNS servers has a full record of the entire Internet because that is simply impossible.
+
+02:08.220 --> 02:15.300
+So what is happening when we are doing networking and your visiting websites that your current local
+
+02:15.300 --> 02:21.180
+DNS has never seen before is that you are going to ask other DNS servers around the web until you find
+
+02:21.420 --> 02:22.800
+the resource that you're looking for.
+
+02:23.190 --> 02:25.020
+So let's take a look at how this work.
+
+02:25.140 --> 02:32.520
+So here we have a little setup where the circle or this area right here indicates our local network
+
+02:32.850 --> 02:35.940
+which could be similar to the network that you are having at home.
+
+02:35.970 --> 02:40.380
+And then we have the entire internet in this bubble up here.
+
+02:40.380 --> 02:42.970
+So we are sitting at the client computer.
+
+02:42.990 --> 02:51.000
+So we will see say see right here and then we have local server running on our entire internal network
+
+02:51.390 --> 02:56.850
+which is called Test on local and then we have our DNS server right here.
+
+02:56.850 --> 03:04.380
+And both the DNS our local Tesco and our client is connected to our router which provide us with capability
+
+03:04.380 --> 03:05.820
+of reaching the other Internet.
+
+03:06.300 --> 03:13.650
+So we are sitting at the client and then at the client computer we will have a host file so we will
+
+03:13.650 --> 03:22.310
+see a host right here and we will have a cache.
+
+03:22.350 --> 03:26.250
+So this is two fails.
+
+03:26.370 --> 03:28.700
+That is our host and our cash.
+
+03:28.740 --> 03:34.010
+And when we are trying to request a given resource for example we are trying to get access to this test
+
+03:34.040 --> 03:34.780
+local.
+
+03:35.070 --> 03:43.490
+Our computer will first look at its cash to see have I visit this requested service before.
+
+03:43.500 --> 03:51.180
+If not it will look at the host file to have a new records of what address this is placed at and where
+
+03:51.330 --> 03:53.370
+the server is located.
+
+03:53.370 --> 04:00.630
+And if not it will say OK then I need to ask my DNS server meaning that the one that is configured on
+
+04:00.630 --> 04:04.090
+our internal network to resolve the domain names.
+
+04:04.140 --> 04:12.570
+So what it will do is to send a genius request over to our radar and then it will go down to the DNS
+
+04:13.860 --> 04:14.850
+and this request.
+
+04:14.850 --> 04:16.390
+It will basically ask.
+
+04:16.570 --> 04:16.960
+OK.
+
+04:16.980 --> 04:19.950
+Do you know where tested local is located.
+
+04:19.950 --> 04:26.670
+And our audience will have a record of that because it kept a record of what is happening internally
+
+04:26.670 --> 04:27.490
+on our network.
+
+04:27.630 --> 04:31.590
+So it will respond back to our clan and say Yea.
+
+04:31.620 --> 04:34.760
+This is the IP and location of the test.
+
+04:34.770 --> 04:41.400
+So our clan will say fine and then it will get to Ferrara and get down to our test service right here
+
+04:42.510 --> 04:45.630
+and then it will get the resources back to the client.
+
+04:45.630 --> 04:54.090
+But if our client then want to get access to a service that is on the internet and not within the internal
+
+04:54.360 --> 05:00.780
+network for example this will slow the academy server that is placed somewhere on the Internet.
+
+05:00.930 --> 05:10.440
+Our client will then again check its case its host file and it will get to the conclusion that it haven't
+
+05:10.440 --> 05:12.690
+rescinded this visited the site before.
+
+05:12.690 --> 05:16.110
+So again we will use green for this one.
+
+05:16.110 --> 05:25.890
+It will ask our DNS and say Do you know this resource and our DNS will then do a look up and say No
+
+05:26.220 --> 05:31.340
+I actually don't have any records of this site that you're looking for.
+
+05:31.440 --> 05:38.820
+So I will check up with my configured DNS so our DNS on our internal network through our arrow will
+
+05:38.820 --> 05:46.230
+have external DNS configured in case that it need to look up something itself similar to when you are
+
+05:46.770 --> 05:51.760
+calling someone at a library or something asking for a book.
+
+05:51.780 --> 05:57.390
+Then if the library don't have the book on their shelf they will probably reach out to one of the other
+
+05:58.080 --> 06:03.780
+local libraries nearby in order to hear if they have the book and the same 74 audience.
+
+06:03.780 --> 06:12.960
+So I had our audience will have this external genius configure and that is the Dennis that it should
+
+06:12.960 --> 06:13.500
+read too.
+
+06:13.500 --> 06:22.040
+So Dennis will make a request out here and then it will ask Do you know where this Winslow page is located
+
+06:22.400 --> 06:30.110
+and actually this Dennis does have a record of where this is located and the IP of it so it will return
+
+06:30.110 --> 06:30.920
+an answer.
+
+06:31.000 --> 06:38.780
+We will do this in blue so it will say yea I notice and it will turn back to our genus what our genus
+
+06:38.780 --> 06:45.860
+will now do then is to create this record of where this is placed because now it know where it is placed
+
+06:45.860 --> 06:54.840
+due to the Mugabe or for external genus and it will return back to our client and say here there which
+
+06:54.840 --> 06:57.830
+side you are looking for is placed under this IP.
+
+06:57.860 --> 07:03.650
+So what we will do now as our client you will make a request.
+
+07:03.740 --> 07:10.640
+We will do this in pink so we can now just say OK I need to see this so we will go to our RA and our
+
+07:10.640 --> 07:16.940
+arrow will go directly to the place on the Internet where this resource is stored.
+
+07:16.940 --> 07:27.560
+So this is how we are using our DNS to resolve internal locations and how our genies get help from external
+
+07:27.560 --> 07:32.890
+DNS servers to resolve external services in case that it does not have a record of it.
