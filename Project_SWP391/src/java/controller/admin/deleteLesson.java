@@ -47,7 +47,7 @@ public class deleteLesson extends HttpServlet {
             
             String action = request.getParameter("action");
             request.setAttribute("action", action);
-            
+
             int courseID = Integer.parseInt(request.getParameter("courseId"));
             Course course = daoCourse.getCourseByCourseId(courseID);
             request.setAttribute("course", course);
@@ -104,8 +104,8 @@ public class deleteLesson extends HttpServlet {
         request.setAttribute("message", message);        
         
         request.getRequestDispatcher(VIEW_PATH).forward(request, response);
-    }
-
+            }
+        
     /** 
      * Returns a short description of the servlet.
      * @return a String containing servlet description

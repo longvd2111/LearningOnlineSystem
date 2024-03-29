@@ -17,6 +17,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
+
 import java.util.stream.Collectors;
 import model.Course;
 import model.chapters;
@@ -41,7 +42,7 @@ public class addChapter extends HttpServlet {
             throws ServletException, IOException {
 
         String message = "";
-
+   
         String action = request.getParameter("action");
         request.setAttribute("action", action);
 

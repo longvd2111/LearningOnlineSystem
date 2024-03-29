@@ -97,7 +97,7 @@ public class pricePackageUpdate extends HttpServlet {
         request.setAttribute("listPrice", listPrice);
         request.setAttribute("message", message);
  
-
+        
         request.getRequestDispatcher(VIEW_PATH).forward(request, response);
     }
 

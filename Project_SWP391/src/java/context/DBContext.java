@@ -21,6 +21,7 @@ public class DBContext {
 
 
 
+
             Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
             connection = DriverManager.getConnection(url, user, pass);
             System.out.println("connected");

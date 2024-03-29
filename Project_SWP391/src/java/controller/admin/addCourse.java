@@ -99,7 +99,7 @@ public class addCourse extends HttpServlet {
         String description = request.getParameter("description")==null?"":request.getParameter("description");             
         Part image =  request.getPart("image");        
         String realPath = request.getServletContext().getRealPath("/img/course");       
-
+        
         String fileName;
         
         fileName = Paths.get(image.getSubmittedFileName()).getFileName().toString();

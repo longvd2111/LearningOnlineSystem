@@ -95,6 +95,7 @@ public class addLesson extends HttpServlet {
             request.setAttribute("pageIndex", pageIndex);
             
             
+
             int chapterID = Integer.parseInt(request.getParameter("chapterId"));
             chapters chapter = daoLesson.getChapterByChapterId(chapterID);
             request.setAttribute("chapter", chapter);
@@ -107,6 +108,7 @@ public class addLesson extends HttpServlet {
         String video = request.getParameter("video");
         String youtubeLink="";
         
+
 //        int srcIndex = video.indexOf("src=\"");
 //        if (srcIndex != -1) {
 //            int endIndex = video.indexOf("\"", srcIndex + 5); 
@@ -122,7 +124,7 @@ public class addLesson extends HttpServlet {
         }
         if (video.contains(LinkYouTube)) {
             youtubeLink=daoLesson.getLinkVideo(video);
-        }
+            }
         
         lessons lessonAdd = new lessons(0, name, chapterID, youtubeLink, status, content_text);
         daoLesson.insertLesson(lessonAdd);

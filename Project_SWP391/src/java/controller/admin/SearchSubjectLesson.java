@@ -92,7 +92,7 @@ public class SearchSubjectLesson extends HttpServlet {
         request.setAttribute("message", message);
 
         request.getRequestDispatcher(VIEW_PATH).forward(request, response);
-    }
+        }
 
     /**
      * Returns a short description of the servlet.

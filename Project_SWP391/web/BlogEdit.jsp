@@ -151,9 +151,15 @@
             ClassicEditor
                     .create(document.querySelector('#editor1'));
             ClassicEditor
+<<<<<<< HEAD
                     .create(document.querySelector('#imageP'), {
                         toolbar: ['imageInsert']
                     });
+=======
+                    .create(document.querySelector('#imageP'),{
+                         toolbar: ['imageInsert']
+            });  
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
         </script>
     </body>
 </html>

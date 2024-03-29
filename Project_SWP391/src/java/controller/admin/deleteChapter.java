@@ -18,6 +18,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.util.List;
 import java.util.stream.Collectors;
+
 import model.Course;
 import model.chapters;
 import model.lessons;
@@ -111,8 +112,8 @@ public class deleteChapter extends HttpServlet {
         request.setAttribute("message", message);
 
         request.getRequestDispatcher(VIEW_PATH).forward(request, response);
-    }
-
+            }
+        
     /** 
      * Returns a short description of the servlet.
      * @return a String containing servlet description

@@ -86,7 +86,7 @@ public class UpdateOverviewCourse extends HttpServlet {
         }else{
             fileName = Paths.get(image.getSubmittedFileName()).getFileName().toString();
         }       
-        
+       
         if (!Files.exists(Paths.get(realPath))) {
             Files.createDirectory(Paths.get(realPath));
         }
@@ -99,7 +99,7 @@ public class UpdateOverviewCourse extends HttpServlet {
         int numberOfLesson = daoLesson.countLessonByCourseID(courseId);
         
         
-            
+        
             List<users> listUserByRole = daoUser.getUserByRole(4);
             List<categories> listCate = daoCate.getAllCategory();
             

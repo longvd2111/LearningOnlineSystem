@@ -166,7 +166,7 @@ public class SearchSubjectList extends HttpServlet {
 
         request.getRequestDispatcher(VIEW_PATH).forward(request, response);
 
-    }
+        }
 
     /**
      * Handles the HTTP <code>POST</code> method.

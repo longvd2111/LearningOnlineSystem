@@ -1,0 +1,351 @@
+.p{
+                font-family: Arial;
+            }
+            /* css cho head cua course detail*/
+            .CourseDetails-headbackground{
+                background-color: #2d2f31;
+                height: 250px;
+                margin-top: 0;
+                position: relative;
+                display: grid;
+                grid-template-columns: 445px 300px;
+                column-gap: 45px;
+            }
+
+            .CourseDetails-headbackground img{
+                width: 100%;
+                object-fit: cover;
+            }
+
+            .CourseDetails-title{
+                color: White;
+                font-family: Arial;
+                font-size: 35px;
+            }
+            .CourseDetails-headdescription{
+                color: White;
+
+            }
+
+            .CourseDetails-head-info{
+                padding-top: 10%;
+                width: 700px;
+            }
+
+            .Course-register-button{
+                background-color: rgb(200, 0, 0);
+                color: white;
+                border: none;
+                height: 36px;
+                width: 105px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                vertical-align: top;
+            }
+            .Course-register-button:hover{
+                opacity: 0.7;
+            }
+
+            .Course-register-button:active{
+                opacity: 0.3;
+            }
+
+            .Course-register-AddToCart{
+                background-color: rgb(200, 0, 0);
+                color: white;
+                border: none;
+                height: 36px;
+                width: 105px;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: opacity 0.3s;
+                vertical-align: top;
+            }
+
+            .Course-register-AddToCart:hover{
+                opacity: 0.7;
+            }
+
+            .Course-register-AddToCart:active{
+                opacity: 0.3;
+            }
+
+
+
+            .search-box {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: none;
+                border-radius: 5px;
+            }
+
+            .subject-categories,
+            .featured-subjects,
+            .static-contacts {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+
+            .subject-categories li,
+            .featured-subjects li {
+                margin-bottom: 5px;
+            }
+
+            .static-contacts p {
+                margin-bottom: 5px;
+            }
+
+            .open-button {
+                background-color: #555;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                opacity: 0.8;
+                position: fixed;
+                bottom: 23px;
+                right: 28px;
+                width: 280px;
+            }
+
+
+            /*CSS cho course cate*/
+            .CourseDetails_category_all{
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 136px;
+            }
+
+
+            /*Css cho description cua course detail*/
+            .CourseDetails_courseinfo{
+                margin-right: 30px;
+                border-style: solid;
+                border-color: hsl(120, 1%, 79%);
+                border-radius: 3%;
+                margin-top: 35px;
+            }
+
+            .CourseDetails-description{
+                border-width: 1px;
+/*                border-style: solid;*/
+                width: 700px;
+                height: 150px;
+                margin-top: 20px;
+                margin-left: 0;
+/*                border-color: hsl(120, 1%, 79%);
+                border-radius: 3%;*/
+
+            }
+
+            .CourseDetails-description-title{
+                font-family: Arial;
+                font-size: 25px;
+                margin-left: 10px;
+                margin-top: 5px;
+            }
+
+            .CourseDetails-description-de{
+                margin-left: 10px;
+                
+            }
+            /* Css cho pop-up screen*/
+            /* The popup form - hidden by default */
+            .form-popup {
+                display: none;
+                position: fixed;
+                bottom: 0;
+                right: 15px;
+                border: 3px solid #f1f1f1;
+                z-index: 9;
+            }
+
+            /* Add styles to the form container */
+            .form-container {
+                max-width: 300px;
+                padding: 10px;
+                background-color: pink;
+                height: 100%;
+                align-items: center;
+            }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+            /* When the inputs get focus, do something */
+            .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                background-color: #ddd;
+                outline: none;
+            }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom:10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+            /*Css cho sider*/
+            .CourseDetails-CourseFeatured{
+                margin-left: 0;
+                margin-top: 30px;
+            }
+
+            .CourseDetails-CourseFeatured-image{
+                width: 100px;
+                margin-bottom: 11px;
+
+            }
+
+
+
+            .CourseDetails-cate {
+                background-color: #f8f9fa;
+                border: 1px solid #dee2e6;
+                border-radius: 5px;
+                border: 2px;
+                width: 365px;
+                height: 100%;
+                margin-top: 20px;
+            }
+
+            .CourseDetails-cate-khung {
+                text-align: center;
+                border-style: solid;
+                border-radius: 8px;
+            }
+
+            .CourseDetails-cate-name {
+                font-size: 23px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                background-color: pink;
+                height: 35px;
+            }
+
+            .CourseDetails-cate-khung ul {
+                padding-right: 2rem;
+
+            }
+
+            .CourseDetails-cate-khung li {
+                height: 60px;
+
+            }
+
+
+
+
+            .btn:hover {
+                background-color: #0056b3;
+            }
+
+            .sider{
+                display: flex;
+                margin-left: 0;
+                margin-right: 20px;
+            }
+
+            /* Css cho form đăng ký coursre*/
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+
+            .CourseDetails-modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 400px;
+
+            }
+
+            .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            /* CSS cho form đăng ký */
+            #registrationForm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            /* CSS cho các input trong form */
+            #registrationForm input {
+                margin-bottom: 10px;
+                padding: 8px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            /* CSS cho nút Submit */
+            #registrationForm button {
+                padding-inline: 80px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 7px;
+                background-color: #4CAF50;
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            /* CSS cho nút Close Modal */
+            #closeModal {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                cursor: pointer;
+            }
+
+            /* CSS cho category */
+            .Category_all{
+                margin-left: 50px;
+                border: solid;
+                border-radius: 15px;
+            }
