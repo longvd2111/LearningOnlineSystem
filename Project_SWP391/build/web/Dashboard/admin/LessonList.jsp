@@ -10,6 +10,14 @@
         <link href="././css/styles.css" rel="stylesheet" type="text/css"/>
 
         <title>Manage Lesson</title>
+<<<<<<< HEAD
+        <style>
+            .body{
+                overflow-x: hidden;
+            }
+        </style>
+=======
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
 
     </head>
     <body>
@@ -74,8 +82,13 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item"><a href="Home">Home</a></li>
                                     <li class="breadcrumb-item"><a href="SubjectsList">List Course Manage</a></li>
+<<<<<<< HEAD
+                                    <li class="breadcrumb-item"><a href="ShowChapter?courseId=${course.course_id}&action=${action}">Manage lessons(Chapter List)</a></li>
+                                    <li class="breadcrumb-item active" aria-current="#">Lesson List</li>
+=======
                                     <li class="breadcrumb-item"><a href="ShowChapter?courseId=${course.course_id}&action=${action}">Manage lessons/Chapter List</a></li>
                                     <li class="breadcrumb-item active" aria-current="#">Manage lessons/Lesson List</li>
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                                     
                                 </ol>
                             </nav>
@@ -91,7 +104,11 @@
                             <form action="SearchSubjectLesson" method="get" style="background-color: #cfe2ff;border: solid 1px #9ec5fe;border-radius: 15px">
                                 <input hidden="" name="action" value="${action}">
                                 <input hidden="" name="courseId" value="${course.course_id}">
+<<<<<<< HEAD
+                                <input hidden="" name="chapterId" value="${chapter.chapter_id}">
+=======
                                 <input hidden="" name="chapterID" value="${chapter.chapter_id}">
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                                 <div class="form-group">
                                     <label for="search">Search lesson</label>
                                     <input type="text" name="keywordLesson"class="form-control"  placeholder="Search "  value="${keywordLesson}">
@@ -112,7 +129,11 @@
 
                                 <input type="text" name="page"value="1" hidden>
                                 <button type="submit" class="btn btn-primary mb-2">Filter</button>
+<<<<<<< HEAD
+                                <a class="btn " href="ShowLesson?courseId=${course.course_id}&action=${action}&chapterId=${chapter.chapter_id}" style="background-color: #38A5EE;margin-bottom: 8px">Reset</a>
+=======
                                 <a class="btn " href="ShowLesson?courseId=${course.course_id}&action=${action}&chapterID=${chapter.chapter_id}" style="background-color: #38A5EE;margin-bottom: 8px">Reset</a>
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
 
 
                             </form>
@@ -129,9 +150,15 @@
                                     <strong>${message}!</strong> 
                                 </div>
                             </c:if> 
+<<<<<<< HEAD
+                            <c:if test="${action eq 'edit'}">   
+                                <a type="button" class="btn btn-primary mb-3" href="addLesson?courseId=${course.course_id}&action=${action}&chapterId=${chapter.chapter_id}">Add Lesson</a>
+                            </c:if>
+=======
                                  <c:if test="${action eq 'edit'}">   
                                 <a type="button" class="btn btn-primary mb-3" href="addLesson?courseId=${course.course_id}&action=${action}&chapterId=${chapter.chapter_id}">Add Lesson</a>
                                 </c:if>
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                             <c:if test="${numberOfLesson > 0}">
 
                                 <table style="text-align: center;" class="table">
@@ -147,7 +174,11 @@
                                     <tbody>
                                         <c:forEach items="${listLesson}" var="lesson" varStatus="loop">    
                                             <tr>
+<<<<<<< HEAD
+                                                <td>${lesson.lesson_id}</td>
+=======
                                                 <td>${loop.index+1}</td>
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                                                 <td style="text-align: left">
 
                                                     ${lesson.lesson_name}
@@ -165,6 +196,16 @@
 
                                                 <td>
 
+<<<<<<< HEAD
+                                                    <a type="button" class="btn btn-primary btn-action" href="viewLessonDetail?lesson_id=${lesson.lesson_id}&action=${action}&actionLesson=view&courseId=${course.course_id}">View</a>
+                                                    <c:if test="${action eq 'edit'}">   
+                                                        <a type="button" class="btn btn-warning btn-action" href="editLesson?courseId=${course.course_id}&action=${action}&chapterId=${chapter.chapter_id}&lessonId=${lesson.lesson_id}">Edit</a>
+                                                        <button type="button" class="btn btn-danger btn-action" data-bs-toggle="modal" data-bs-target="#deleteLesson${lesson.lesson_id}">Delete</button>
+                                                    </c:if>
+
+                                                    <!-- Delete  Lesson-->
+                                                    <div class="modal" id="deleteLesson${lesson.lesson_id}">
+=======
                                                     <a type="button" class="btn btn-secondary btn-action" href="viewLessonDetail?lesson_id=${lesson.lesson_id}&action=${action}&actionLesson=view&courseId=${course.course_id}">View</a>
                                                      <c:if test="${action eq 'edit'}">   
                                                     <a type="button" class="btn btn-danger btn-action" href="editLesson?courseId=${course.course_id}&action=${action}&chapterId=${chapter.chapter_id}&lessonId=${lesson.lesson_id}">Edit</a>
@@ -173,6 +214,7 @@
 
                                                     <!-- Delete  Chapter-->
                                                     <div class="modal" id="deleteChapter${chapter.chapter_id}">
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                                                         <div class="modal-dialog">
                                                             <div class="modal-content">
                                                                 <div class="modal-header">
@@ -180,6 +222,17 @@
                                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                                 </div>
                                                                 <div class="modal-body">
+<<<<<<< HEAD
+                                                                    <p>Are you sure you want to delete this Lesson?</p>
+                                                                </div>
+                                                                <div class="modal-footer">
+                                                                    <form action="deleteLesson" method="post">
+                                                                        <input type="text" name="page"value="1" hidden>
+                                                                        <input hidden="" name="action" value="${action}">
+                                                                        <input hidden="" name="courseId" value="${course.course_id}">
+                                                                        <input hidden="" name="chapterId" value="${chapter.chapter_id}">
+                                                                        <input hidden="" name ="lessonId" value="${lesson.lesson_id}">
+=======
                                                                     <p>Are you sure you want to delete this Dimension?</p>
                                                                 </div>
                                                                 <div class="modal-footer">
@@ -188,6 +241,7 @@
                                                                         <input hidden="" name ="chapter_id" value="${chapter.chapter_id}">
                                                                         <input hidden="" name="chapter_name" value="${chapter.chapter_name}">
                                                                         <input hidden="" name="courseId" value="${courseId}">
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                                                                         <button type="submit" class="btn btn-danger">Delete</button>
                                                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
                                                                     </form>
@@ -200,7 +254,10 @@
 
                                             </tr>
 
+<<<<<<< HEAD
+=======
                                             <!--edit Chapter -->
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
 
                                         </c:forEach>
                                     </tbody>
@@ -217,12 +274,21 @@
                                     <nav aria-label="Page navigation ">
                                         <a href="#" id="searchCourseLink"></a>
                                         <ul class="pagination">
+<<<<<<< HEAD
+                                            <li class="page-item"><a class="page-link" href="SearchSubjectLesson?courseId=${course.course_id}&page=${(pageIndex <= 1) ? 1 : pageIndex-1}&action=${action}&keywordLesson=${keywordChapter}&status=${status}&chapterId=${chapter.chapter_id}">Previous</a></li>
+
+                                            <c:forEach begin="1" end="${endPage}" var = "i">
+                                                <li class="page-item"><a class="page-link ${i == pageIndex ? 'active':'' }" href="SearchSubjectLesson?courseId=${course.course_id}&page=${i}&action=${action}&keywordLesson=${keywordChapter}&status=${status}&chapterId=${chapter.chapter_id}">${i}</a></li>
+                                                </c:forEach>
+                                            <li class="page-item"><a class="page-link" href="SearchSubjectLesson?courseId=${course.course_id}&page=${(pageIndex + 1 <= endPage) ? pageIndex + 1 : pageIndex}&action=${action}&keywordLesson=${keywordChapter}&status=${status}&chapterId=${chapter.chapter_id}">Next</a></li>
+=======
                                             <li class="page-item"><a class="page-link" href="SearchSubjectLesson?courseId=${course.course_id}&page=${(pageIndex <= 1) ? 1 : pageIndex-1}&action=${action}&keywordLesson=${keywordChapter}&status=${status}&chapterID=${chapter.chapter_id}">Previous</a></li>
 
                                             <c:forEach begin="1" end="${endPage}" var = "i">
                                                 <li class="page-item"><a class="page-link ${i == pageIndex ? 'active':'' }" href="SearchSubjectLesson?courseId=${course.course_id}&page=${i}&action=${action}&keywordLesson=${keywordChapter}&status=${status}&chapterID=${chapter.chapter_id}">${i}</a></li>
                                                 </c:forEach>
                                             <li class="page-item"><a class="page-link" href="SearchSubjectLesson?courseId=${course.course_id}&page=${(pageIndex + 1 <= endPage) ? pageIndex + 1 : pageIndex}&action=${action}&keywordLesson=${keywordChapter}&status=${status}&chapterID=${chapter.chapter_id}">Next</a></li>
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
                                         </ul>
                                     </nav>  
                                 </div>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+=======
 S<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+>>>>>>> 0e7d880421b71d6abb61ecc9f4201e53472a8aed
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import ="java.util.List"%>
 
